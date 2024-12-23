@@ -1,4 +1,5 @@
-Count of primes
+'''
+Q. Count of primes
 
 Problem Description
 You will be given an integer n. You need to return the count of prime numbers less than or equal to n.
@@ -11,6 +12,7 @@ Single input parameter n in function.
 
 Output Format
 Return the count of prime numbers less than or equal to n.
+'''
 
 CODE
 
