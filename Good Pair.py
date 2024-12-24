@@ -1,3 +1,4 @@
+'''
 Q. Good Pair
 
 Problem Description
@@ -33,7 +34,7 @@ Output 2:
 0
 Output 3:
 1
-
+'''
 
 CODE:
 1.
