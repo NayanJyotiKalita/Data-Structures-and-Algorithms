@@ -32,4 +32,10 @@ Output 1:
 Output 2:
 [6, 5, 2]
 '''
+CODE:
+
+def solve(self, A, B, C):
+    for i in range((C-B+1)//2):
+        A[B+i], A[C-i] = A[C-i], A[B+i]
+    return A
 
