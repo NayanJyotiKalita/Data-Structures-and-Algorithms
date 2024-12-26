@@ -68,3 +68,10 @@ optional codes:
             if B - i != i or hm[B - i] > 1:
                 return 1
     return 0
+
+3.
+    for i in range(len(A)-1):
+        for j in range(i+1, len(A)):
+            if A[i] + A[j] == B:
+                return 1
+    return 0
