@@ -55,7 +55,7 @@ optional codes:
         hs.add(A[i])
     return 0
 
-2.
+2. Hashmap (Dictionary)
     hm = {}
     for i in range(len(A)):
         if A[i] in hm:
@@ -69,7 +69,7 @@ optional codes:
                 return 1
     return 0
 
-3.
+3. Brute Force
     for i in range(len(A)-1):
         for j in range(i+1, len(A)):
             if A[i] + A[j] == B:
