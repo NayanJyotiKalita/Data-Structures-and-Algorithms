@@ -45,3 +45,12 @@ def solve(self, A, B):
             return 1
         freq[num] = True
     return 0
+
+optional codes:
+1.
+    hs = set()
+    for i in range(len(A)):
+        if B - A[i] in hs:
+            return 1
+        hs.add(A[i])
+    return 0
