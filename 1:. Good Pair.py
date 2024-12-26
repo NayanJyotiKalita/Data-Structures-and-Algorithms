@@ -54,3 +54,17 @@ optional codes:
             return 1
         hs.add(A[i])
     return 0
+
+2.
+    hm = {}
+    for i in range(len(A)):
+        if A[i] in hm:
+            hm[A[i]] += 1
+        else:
+            hm[A[i]] = 1
+    
+    for i in hm.keys():
+        if B - i in hm:
+            if B - i != i or hm[B - i] > 1:
+                return 1
+    return 0
