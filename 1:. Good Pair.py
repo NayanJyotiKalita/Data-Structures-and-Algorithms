@@ -47,7 +47,7 @@ def solve(self, A, B):
     return 0
 
 optional codes:
-1.
+1. Hashset
     hs = set()
     for i in range(len(A)):
         if B - A[i] in hs:
