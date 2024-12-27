@@ -60,5 +60,3 @@ Rotate towards the right 1 time - [2, 5, 6] => [6, 2, 5]
 '''
 
 CODE:
-
-
