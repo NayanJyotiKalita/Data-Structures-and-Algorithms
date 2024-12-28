@@ -1,3 +1,4 @@
+'''
 Q4. Max Min of an Array
 
 Solved
@@ -53,3 +54,4 @@ Maximum Element is 5 and Minimum element is -4. (5 + (-4)) = 1.
 Explanation 2:
 
 Maximum Element is 4 and Minimum element is 1. (4 + 1) = 5.
+'''
