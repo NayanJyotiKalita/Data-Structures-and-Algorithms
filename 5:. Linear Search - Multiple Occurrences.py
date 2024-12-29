@@ -32,4 +32,7 @@ Explanation 1:
 Element at index 2, 3 is equal to 2 hence count is 2.
 Explanation 2:
 There is no element equal to 3 in the array.
-''''
+'''
+
+CODE:
+
