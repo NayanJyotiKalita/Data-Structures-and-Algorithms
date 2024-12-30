@@ -1,3 +1,4 @@
+'''
 Q2. Time to equality
 
 Problem Description
@@ -21,3 +22,5 @@ Example Output
 
 Example Explanation
 We can change the array A = [4, 4, 4, 4, 4]. The time required will be 8 seconds.
+'''
+CODE:
