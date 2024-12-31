@@ -1,4 +1,5 @@
-Q3. Count of elements
+'''
+Count of elements
 
 Problem Description
 Given an array A of N integers. 
@@ -31,5 +32,6 @@ Explanation 1:
 The elements that have at least 1 element greater than itself are 1 and 2
 Explanation 2:
 The elements that have at least 1 element greater than itself is 3
+'''
 
 CODE:
