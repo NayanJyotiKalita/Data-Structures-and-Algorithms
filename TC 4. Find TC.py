@@ -1,4 +1,4 @@
-Find Time Complexity - 5
+Find the Time Complexity
 
 def func(n):
   s = 0
