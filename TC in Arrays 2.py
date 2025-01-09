@@ -1,8 +1,8 @@
-Problems on 1D Arrays-2 MCQ D
-
-Raw Problem
+'''
+Problems on 1D Arrays
 
 What will be the output of the following code?
+'''
 
 class Main {
    static void fun(int[]arr) {
@@ -16,3 +16,12 @@ class Main {
        System.out.println(arr[3]);
    }
 }
+
+Options:
+1. 40
+2. 30
+3. 98
+4. Error
+
+Ans:
+3
