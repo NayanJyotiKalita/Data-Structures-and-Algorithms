@@ -27,11 +27,36 @@ Output 2:
  -1 
 
 Example Explanation
+
 Explanation 1:
  First largest element = 2
  Second largest element = 1
+ 
 Explanation 2:
  There is no second largest element in the array.
 '''
 
 CODE:
+
+def solve(self, A):
+  if len(A) == 1:
+    return -1
+  large = A[0]
+  sec_large = -1
+  for i in range(len(A)):
+    if A[i] > large:
+      large = A[i]
+  for i in range(len(A)):
+    if A[i] > sec_large and A[i] < large:
+      sec_large = A[i]
+  return sec_large
+
+'''or'''
+
+def solve(self, A):
+  s = set(A)
+  if len(s) <= 1:
+    return -1
+  maxi = max(s)
+  s.remove(maxi)
+  return max(s)
