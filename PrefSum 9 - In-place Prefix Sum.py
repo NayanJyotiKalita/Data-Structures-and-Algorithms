@@ -32,3 +32,11 @@ Explanation 2:
 The prefix sum array of [4, 3, 2] is [4, 7, 9].
 
 CODE:
+
+class Solution:
+    # @param A : list of integers
+    # @return a list of integers
+    def solve(self, A):
+        for i in range(1, len(A)):
+            A[i] = A[i] + A[i-1]
+        return A
