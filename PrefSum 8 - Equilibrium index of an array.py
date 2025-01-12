@@ -33,7 +33,30 @@ Output 1:
 Output 2:
 -1
 
+Example Explanation
 
+Explanation 1:
+i   Sum of elements at lower indexes    Sum of elements at higher indexes
+0                   0                                   7
+1                  -7                                   6
+2                  -6                                   1
+3                  -1                                  -1
+4                   1                                   3
+5                  -3                                   0
+6                   0                                   0
+
+3 is an equilibrium index, because: 
+A[0] + A[1] + A[2] = A[4] + A[5] + A[6]
+
+Explanation 2:
+
+i   Sum of elements at lower indexes    Sum of elements at higher indexes
+0                   0                                   5
+1                   1                                   3
+2                   3                                   0
+Thus, there is no such index.
+
+    
 CODE:
 
 class Solution:
