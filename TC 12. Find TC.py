@@ -1,4 +1,4 @@
-What is the time complexity of the following code:
+'''What is the time complexity of the following code'''
 
 a = 0
 for i in range(N):
