@@ -1,4 +1,4 @@
-What is the time complexity of the following code snippet
+'''What is the time complexity of the following code snippet'''
 
 int func(int n){
   int s = 0;
