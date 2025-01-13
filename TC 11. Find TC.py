@@ -1,4 +1,4 @@
-What is the time complexity of the following code :
+'''What is the time complexity of the following code'''
 
 count = 0
 while N > 0:
