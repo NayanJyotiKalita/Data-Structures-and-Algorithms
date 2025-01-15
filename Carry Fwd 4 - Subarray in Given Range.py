@@ -40,3 +40,18 @@ The subarray of A from 0 to 1 is [4, 2].
 
 CODE:
 
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @param C : integer
+    # @return a list of integers
+    def solve(self, A, B, C):
+        d = []
+        for i in range(B, C+1):
+            d.append(A[i])
+        return d
+
+'or'
+
+    def solve(self, A, B, C):
+      return A[B : C + 1]
