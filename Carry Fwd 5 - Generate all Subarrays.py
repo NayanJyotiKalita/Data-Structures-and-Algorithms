@@ -30,3 +30,18 @@ Output 1:
 Output 2:
 [[1 ], [1 4 ], [2 ], [2 1 ], [2 1 4 ], [4 ], [5 ], [5 2 ], [5 2 1 ], [5 2 1 4 ] ]
 
+CODE:
+
+class Solution:
+    # @param A : list of integers
+    # @return a list of list of integers
+    def solve(self, A):
+        ans = []
+        n = len(A)
+        for si in range(n):
+            for ei in range(si, n):
+                ls = []
+                for k in range(si, ei + 1):
+                    ls.append(A[k])
+                ans.append(ls)
+        return ans
