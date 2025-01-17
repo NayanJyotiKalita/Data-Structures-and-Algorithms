@@ -32,3 +32,32 @@ Explanation 1:
 Explanation 2:
  Take the last 3 elements of the array.
 
+CODE:
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def solve(self, A):
+
+        n = len(A)
+        maxi = max(A)
+        mini = min(A)
+        last_max = -1
+        last_min = -1
+        ans = n
+
+        if mini == maxi:
+            return 1
+
+        for i in range(n):
+            if A[i] == maxi:
+                last_max = i
+                if last_min != -1:
+                    ans = min(ans, last_max - last_min + 1)
+            
+            elif A[i] == mini:
+                last_min = i
+                if last_max != -1:
+                    ans = min(ans, last_min - last_max + 1)
+        
+        return ans
