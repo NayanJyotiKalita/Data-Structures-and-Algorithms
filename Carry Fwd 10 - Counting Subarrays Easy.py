@@ -59,3 +59,17 @@ class Solution:
                 if summ < B:
                     count += 1
         return count
+'or'
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def solve(self, A, B):
+        count = 0
+        for si in range(len(A)):
+            carrysum = 0
+            for ei in range(si, len(A)):
+                carrysum += A[ei]
+                if carrysum < B:
+                    count += 1
+        return count
