@@ -45,3 +45,13 @@ class Solution:
                     ls.append(A[k])
                 ans.append(ls)
         return ans
+'or'
+class Solution:
+    # @param A : list of integers
+    # @return a list of list of integers
+    def solve(self, A):
+        ans = []
+        for si in range(0, len(A)):
+            for ei in range(si, len(A)):
+                ans.append(A[si:ei+1])
+        return ans
