@@ -50,3 +50,19 @@ class Solution:
                 maxi = A[i]
             maxprofit = max(maxprofit, maxi-A[i])
         return maxprofit
+'or'
+
+class Solution:
+    # @param A : tuple of integers
+    # @return an integer
+    def maxProfit(self, A):
+        maxprofit = 0
+        n = len(A)
+        if n == 0:
+            return 0
+        mini = A[0]
+        for i in range(len(A)):
+            if A[i] < mini:
+                mini = A[i]
+            maxprofit = max(maxprofit, A[i]-mini)
+        return maxprofit
