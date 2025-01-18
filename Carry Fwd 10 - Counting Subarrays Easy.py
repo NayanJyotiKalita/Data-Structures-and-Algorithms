@@ -40,4 +40,22 @@ Explanation 2:
 
 CODE:
 
-
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def solve(self, A, B):
+        count = 0
+        for i in range(1, len(A)):
+            A[i] = A[i-1] + A[i]
+        n = len(A)
+        for si in range(n):
+            summ = 0
+            for ei in range(si, n):
+                if si == 0:
+                    summ = A[ei]
+                else:
+                    summ = A[ei] - A[si - 1]
+                if summ < B:
+                    count += 1
+        return count
