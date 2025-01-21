@@ -38,3 +38,14 @@ Their sums are: 1 + 2 + 3 + 3 + 5 + 6 = 20
 Explanation 2:
 The different subarrays for the given array are: [2], [1], [3], [2, 1], [1, 3], [2, 1, 3].
 Their sums are: 2 + 1 + 3 + 3 + 4 + 6 = 19
+
+CODE:
+
+class Solution:
+    # @param A : list of integers
+     # @return an long
+    def subarraySum(self, A):
+        ans = 0
+        for i in range(len(A)):
+            ans += A[i] * (i + 1) * (len(A) - i)
+        return ans
