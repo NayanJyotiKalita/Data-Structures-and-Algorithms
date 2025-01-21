@@ -38,3 +38,28 @@ Explanation 1:
 The subarray [3, 2, 6] is of length 3 and sum 11.
 Explanation 2:
 There are no such subarray.
+
+CODE:
+
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @param C : integer
+    # @return an integer
+    def solve(self, A, B, C):
+        ans = 0
+        summ = 0
+
+        for i in range(B):
+            summ += A[i]
+        if summ == C:
+            return 1
+        
+        i, j = 1, B
+        while j < len(A):
+            summ += A[j] - A[i - 1]
+            if summ == C:
+                return 1
+            i += 1
+            j += 1
+        return 0
