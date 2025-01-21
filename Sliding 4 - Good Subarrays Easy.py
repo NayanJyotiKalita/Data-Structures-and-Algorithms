@@ -39,3 +39,30 @@ Even length good subarrays = {1, 2}
 Odd length good subarrays = {1, 2, 3}, {1, 2, 3, 4, 5}, {2, 3, 4}, {3, 4, 5}, {5} 
 Explanation 1:
 There are 36 good subarrays
+
+CODE:
+
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def solve(self, A, B):
+        for i in range(1, len(A)):
+            A[i] = A[i-1] + A[i]
+        count = 0
+        for si in range(len(A)):
+            summ = 0
+            for ei in range(si, len(A)):
+                if si == 0:
+                    summ = A[ei]
+                    if (ei-si == 0 or (ei-si+1)%2 != 0) and summ > B:
+                        count += 1
+                    elif (ei-si+1)%2 == 0 and summ < B:
+                        count += 1
+                else:
+                    summ = A[ei] - A[si-1]
+                    if (ei-si == 0 or (ei-si+1)%2 != 0) and summ > B:
+                        count += 1
+                    elif (ei-si+1)%2 == 0 and summ < B:
+                        count += 1
+        return count
