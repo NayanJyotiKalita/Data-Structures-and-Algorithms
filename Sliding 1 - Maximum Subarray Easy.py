@@ -40,3 +40,20 @@ We can select {3,4,5} which sums up to 12 which is the maximum possible sum.
 Explanation 2:
 All elements are greater than B, which means we cannot select any subarray.
 Hence, the answer is 0.
+
+CODE:
+
+class Solution:
+    # @param A : integer
+    # @param B : integer
+    # @param C : list of integers
+    # @return an integer
+    def maxSubarray(self, A, B, C):
+        summ = 0
+        for si in range(A):
+            currsm = 0
+            for ei in range(si, A):
+                currsm += C[ei]
+                if currsm <= B:
+                    summ = max(summ, currsm)
+        return summ
