@@ -55,13 +55,15 @@ class Solution:
             for ei in range(si, len(A)):
                 if si == 0:
                     summ = A[ei]
-                    if (ei-si == 0 or (ei-si+1)%2 != 0) and summ > B:
+                 '''if (ei-si == 0 or (ei-si+1)%2 != 0) and summ > B:''' '''this line can also be used'''
+                    if ((ei-si+1)%2 != 0) and summ > B:
                         count += 1
                     elif (ei-si+1)%2 == 0 and summ < B:
                         count += 1
                 else:
                     summ = A[ei] - A[si-1]
-                    if (ei-si == 0 or (ei-si+1)%2 != 0) and summ > B:
+                '''if (ei-si == 0 or (ei-si+1)%2 != 0) and summ > B:'''  '''this line can also be used'''
+                    if ((ei-si+1)%2 != 0) and summ > B:
                         count += 1
                     elif (ei-si+1)%2 == 0 and summ < B:
                         count += 1
