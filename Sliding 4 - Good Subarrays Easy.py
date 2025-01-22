@@ -68,3 +68,27 @@ class Solution:
                     elif (ei-si+1)%2 == 0 and summ < B:
                         count += 1
         return count
+
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def solve(self, A, B):
+        for i in range(1, len(A)):
+            A[i] = A[i-1] + A[i]
+        count = 0
+        for si in range(len(A)):
+            summ = 0
+            for ei in range(si, len(A)):
+                if si == 0:
+                    summ = A[ei]
+                else:
+                    summ = A[ei] - A[si-1]
+                
+                length = ei - si + 1
+                if (length % 2 != 0 and summ > B) or (length % 2 == 0 and summ < B):
+                    count +=1
+                    
+        return count
