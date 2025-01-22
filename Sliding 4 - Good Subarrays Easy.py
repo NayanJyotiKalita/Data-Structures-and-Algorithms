@@ -118,3 +118,24 @@ class Solution:
                     count +=1
 
         return count
+
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def solve(self, A, B):
+        n = len(A)
+        count = 0
+        for si in range(n):
+            carrysum = 0
+            for ei in range(si,n):
+                carrysum += A[ei]
+
+                length = ei - si + 1
+
+                if (length % 2 == 0 and carrysum < B) or (length % 2 != 0 and carrysum > B):
+                   count += 1
+
+        return count
