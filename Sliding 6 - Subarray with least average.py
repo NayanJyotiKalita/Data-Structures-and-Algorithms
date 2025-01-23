@@ -38,6 +38,33 @@ among all subarrays of size 3.
 Explanation 2:
 Subarray between [4, 5] has minimum average
 
+CODE:
 
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def solve(self, A, B):
+
+        idx = 0
+        n = len(A)
+        ans = 1000000
+        summ = 0
+
+        for i in range(B):
+            summ += A[i]
+        ans = min(ans, summ)
+
+        i = 1
+        j = B
+        while j < n:
+            summ += A[j] - A[i-1]
+            if summ < ans:
+                ans = summ
+                idx = i
+            i += 1
+            j += 1
+
+        return idx
 
 
