@@ -37,3 +37,25 @@ Explanation 1:
  The subarrays with sum less than B are {2}, {5}, {6} and {2, 5},
 Explanation 2:
  The subarrays with sum less than B are {1}, {2}, {3} and {2, 3}
+
+CODE:
+
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def solve(self, A, B):
+        for i in range(1, len(A)):
+            A[i] = A[i-1] + A[i]
+        count = 0
+        for si in range(len(A)):
+            summ = 0
+            for ei in range(si, len(A)):
+                if si == 0:
+                    summ = A[ei]
+                else:
+                    summ = A[ei] - A[si-1]
+                
+                if summ < B:
+                    count += 1
+        return count
