@@ -17,3 +17,6 @@ Options:
 4. O(n^2)
 
 5. None of the above
+
+Ans:
+2
