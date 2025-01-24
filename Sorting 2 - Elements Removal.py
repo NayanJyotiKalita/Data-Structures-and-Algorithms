@@ -36,3 +36,15 @@ Explanation 1:
  So, total cost is = 3 + 1 = 4.
 Explanation 2:
  There is only one element in the array. So, cost of removing is 5.
+
+CODE:
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def solve(self, A):
+        A.sort(reverse = True)
+        summ = 0
+        for i in range(len(A)):
+            summ += A[i] * (i+1)
+        return summ            
