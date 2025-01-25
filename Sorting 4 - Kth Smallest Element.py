@@ -44,14 +44,14 @@ class Solution:
 	# @param B : integer
 	# @return an integer
 	def kthsmallest(self, A, B):
-        a = list(A)
-        for i in range(B):
-            mini = i
-            for j in range(i + 1, len(a)):
-                if a[j] < a[mini]:
-                    mini = j
-            a[i], a[mini] = a[mini], a[i]
-        return a[B-1]
+	        a = list(A)
+	        for i in range(B):
+	            mini = i
+	            for j in range(i + 1, len(a)):
+	                if a[j] < a[mini]:
+	                    mini = j
+	            a[i], a[mini] = a[mini], a[i]
+	        return a[B-1]
 
 'or'
 
@@ -60,3 +60,6 @@ class Solution:
 	# @param B : integer
 	# @return an integer
 	def kthsmallest(self, A, B):
+		A = list(A)
+	        A.sort()
+	        return A[B-1]
