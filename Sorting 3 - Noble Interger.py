@@ -25,3 +25,23 @@ Output 1:
  1
 Output 2:
  -1
+
+CODE:
+
+class Solution:
+	# @param A : list of integers
+	# @return an integer
+	def solve(self, A):
+		A.sort(reverse = True)
+        count = -1
+        count_sum = 0
+        if A[0] == 0:
+            return 1
+        for i in range(1, len(A)):
+            if A[i] != A[i-1]:
+                count_sum = i
+            if count_sum == A[i]:
+                count += 1
+                if count == 0:
+                    return 1
+        return count
