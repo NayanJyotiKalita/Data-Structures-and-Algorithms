@@ -36,3 +36,27 @@ Explanation 1:
  3rd element after sorting is 2.
 Explanation 2:
  2nd element after sorting is 2.
+
+CODE:
+
+class Solution:
+	# @param A : tuple of integers
+	# @param B : integer
+	# @return an integer
+	def kthsmallest(self, A, B):
+        a = list(A)
+        for i in range(B):
+            mini = i
+            for j in range(i + 1, len(a)):
+                if a[j] < a[mini]:
+                    mini = j
+            a[i], a[mini] = a[mini], a[i]
+        return a[B-1]
+
+'or'
+
+class Solution:
+	# @param A : tuple of integers
+	# @param B : integer
+	# @return an integer
+	def kthsmallest(self, A, B):
