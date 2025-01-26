@@ -48,3 +48,20 @@ class Solution:
         for i in range(len(A)):
             summ += A[i] * (i+1)
         return summ            
+
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def solve(self, A):
+        n = len(A)
+        # sort the given array
+        A.sort()
+        count = 1 # how many times a number will contribute to ans.
+        ans = 0
+        for i in range(n-1, -1, -1):
+            # add the ith element count times to the ans. 
+            ans += count * A[i] 
+            count += 1
+        return ans
