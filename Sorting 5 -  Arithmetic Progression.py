@@ -44,3 +44,19 @@ class Solution:
             if A[i] - A[i-1] != A[i+1] - A[i]:
                 return 0
         return 1
+
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def solve(self, A):
+        n = len(A)
+        A.sort()
+        dif = A[1] - A[0]
+        ans = 1
+        for i in range(1, n):
+            if(A[i] - A[i-1] != dif):
+                ans = 0
+                break
+        return ans
