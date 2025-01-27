@@ -75,3 +75,5 @@ optional codes:
             if A[i] + A[j] == B:
                 return 1
     return 0
+
+solution = Solution()
