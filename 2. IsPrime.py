@@ -16,3 +16,5 @@ def solve(self, A):
             return 0
         i += 1
     return int(A >= 2)
+
+solution = Solution()
