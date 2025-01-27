@@ -19,3 +19,5 @@ def solve(self, A):
                 count += 1
         i += 1
     return count
+
+solution = Solution()
