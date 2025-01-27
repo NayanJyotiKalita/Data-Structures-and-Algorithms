@@ -39,3 +39,4 @@ def solve(self, A, B, C):
         A[B+i], A[C-i] = A[C-i], A[B+i]
     return A
 
+solution = Solution()
