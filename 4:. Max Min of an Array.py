@@ -55,3 +55,15 @@ Explanation 2:
 
 Maximum Element is 4 and Minimum element is 1. (4 + 1) = 5.
 '''
+
+CODE:
+
+
+
+
+
+
+
+
+
+solution = Solution()
