@@ -45,3 +45,5 @@ def solve(self, A):
         return 1
     else:
         return 0
+
+solution = Solution()
