@@ -32,3 +32,5 @@ def solve(self, A):
         if isprime(i) == True:
             count += 1
     return count
+
+solution = Solution()
