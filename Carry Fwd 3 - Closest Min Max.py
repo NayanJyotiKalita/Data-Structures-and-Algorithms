@@ -61,3 +61,6 @@ class Solution:
                     ans = min(ans, last_min - last_max + 1)
         
         return ans
+
+
+solution = Solution()
