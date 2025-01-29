@@ -55,3 +55,6 @@ class Solution:
 
     def solve(self, A, B, C):
       return A[B : C + 1]
+
+
+solution = Solution()
