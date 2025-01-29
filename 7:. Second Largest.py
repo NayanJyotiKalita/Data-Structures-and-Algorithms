@@ -60,3 +60,6 @@ def solve(self, A):
   maxi = max(s)
   s.remove(maxi)
   return max(s)
+
+
+solution = Solution()
