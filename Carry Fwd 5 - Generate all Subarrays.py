@@ -55,3 +55,5 @@ class Solution:
             for ei in range(si, len(A)):
                 ans.append(A[si:ei+1])
         return ans
+
+solution = Solution()
