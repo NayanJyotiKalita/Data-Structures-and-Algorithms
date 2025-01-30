@@ -38,3 +38,14 @@ Explanation 2:
  Element 4 is strictly greater than all the elements on the right side to it.
  So we will return these two elements i.e [5, 4], we can also any other ordering.
 
+
+
+
+
+
+
+
+
+
+
+solution = Solution()
