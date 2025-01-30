@@ -77,3 +77,5 @@ class Solution:
             ans = max(ans, pref + suff)
         
         return ans
+
+solution = Solution()
