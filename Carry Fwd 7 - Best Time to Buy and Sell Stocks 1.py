@@ -66,3 +66,6 @@ class Solution:
                 mini = A[i]
             maxprofit = max(maxprofit, A[i]-mini)
         return maxprofit
+
+
+solution = Solution()
