@@ -46,3 +46,5 @@ Explanation 2:
             if A[i] == 'G':
                 count += countA
         return count
+
+solution = Solution()
