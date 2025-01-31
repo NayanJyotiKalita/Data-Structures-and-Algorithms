@@ -84,3 +84,6 @@ class Solution:
                 count = pref[r] - pref[l-1]
             c.append(count)
         return c
+
+
+solution =  Solution()
