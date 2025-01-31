@@ -42,3 +42,11 @@ The sum of all elements of A[0 ... 0] = 2 = 2.
 The sum of all elements of A[1 ... 2] = 2 + 2 = 4.
 
 CODE:
+
+
+
+
+
+
+
+solution =  Solution()
