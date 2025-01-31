@@ -40,3 +40,5 @@ class Solution:
         for i in range(1, len(A)):
             A[i] = A[i] + A[i-1]
         return A
+
+solution = Solution()
