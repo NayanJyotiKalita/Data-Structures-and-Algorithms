@@ -38,14 +38,19 @@ Explanation 2:
  Element 4 is strictly greater than all the elements on the right side to it.
  So we will return these two elements i.e [5, 4], we can also any other ordering.
 
+CODE:
 
-
-
-
-
-
-
-
-
+class Solution:
+    # @param A : list of integers
+    # @return a list of integers
+    def solve(self, A):
+        c = []
+        maxi = A[len(A)-1]
+        c. append(maxi)
+        for i in range(len(A)-2, -1, -1):
+            if A[i] > maxi:
+                maxi = A[i]
+                c.append(maxi)
+        return c
 
 solution = Solution()
