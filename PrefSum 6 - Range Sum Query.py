@@ -43,10 +43,25 @@ The sum of all elements of A[1 ... 2] = 2 + 2 = 4.
 
 CODE:
 
+class Solution:
+    # @param A : list of integers
+    # @param B : list of list of integers
+     # @return an list of long
+    def rangeSum(self, A, B):
+        c = []
 
-
-
-
-
-
+        for i in range(1, len(A)):
+            A[i] = A[i] + A[i-1]
+        
+        for i in range(len(B)):
+            sum = 0
+            l = B[i][0]
+            r = B[i][1]
+            if l == 0:
+                sum = A[r]
+            else:
+                sum = A[r] - A[l-1]
+            c.append(sum)
+        return c
+      
 solution =  Solution()
