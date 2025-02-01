@@ -57,3 +57,5 @@ class Solution:
                 if currsm <= B:
                     summ = max(summ, currsm)
         return summ
+
+solution = Solution()
