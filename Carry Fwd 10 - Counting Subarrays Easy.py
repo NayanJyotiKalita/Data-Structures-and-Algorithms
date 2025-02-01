@@ -73,3 +73,5 @@ class Solution:
                 if carrysum < B:
                     count += 1
         return count
+
+solution = Solution()
