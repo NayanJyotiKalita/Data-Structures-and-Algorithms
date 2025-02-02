@@ -62,3 +62,5 @@ class Solution:
             if A[i] == count:
                 return 1
         return -1
+
+solution = Solution()
