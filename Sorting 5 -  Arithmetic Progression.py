@@ -60,3 +60,5 @@ class Solution:
                 ans = 0
                 break
         return ans
+
+solution = Solution()
