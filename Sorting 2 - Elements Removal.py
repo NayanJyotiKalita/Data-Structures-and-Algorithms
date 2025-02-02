@@ -65,3 +65,5 @@ class Solution:
             ans += count * A[i] 
             count += 1
         return ans
+
+solution = Solution()
