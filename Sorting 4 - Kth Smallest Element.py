@@ -63,3 +63,6 @@ class Solution:
 		A = list(A)
 	        A.sort()
 	        return A[B-1]
+
+
+solution = Solution ()
