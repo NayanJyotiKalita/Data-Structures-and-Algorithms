@@ -59,3 +59,5 @@ class Solution:
                 if summ < B:
                     count += 1
         return count
+
+solution = Solution()
