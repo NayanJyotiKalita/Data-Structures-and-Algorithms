@@ -67,4 +67,4 @@ class Solution:
 
         return idx
 
-
+solution = Solution()
