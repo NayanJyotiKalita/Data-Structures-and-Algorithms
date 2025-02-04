@@ -33,3 +33,25 @@ class Solution:
         for i in range(len(A)):
             count += maxi - A[i]
         return count
+
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def time_to_equality(self, A):
+        N = len(A)
+        total_time = 0
+    
+    # Find the maximum element in the array
+        max_element = max(A)
+    
+    # Calculate the difference between the maximum element and each element
+        for i in range(N):
+            diff = max_element - A[i]
+            total_time += diff
+    
+        return total_time
+
+solution = Solution()
+print(solution.time_to_equality(A = [2, 4, 1, 3, 2])
