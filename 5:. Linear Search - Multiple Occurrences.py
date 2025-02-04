@@ -1,4 +1,3 @@
-'''
 Q 5. Linear Search - Multiple Occurences
 
 Problem Description
@@ -32,7 +31,19 @@ Explanation 1:
 Element at index 2, 3 is equal to 2 hence count is 2.
 Explanation 2:
 There is no element equal to 3 in the array.
-'''
 
 CODE:
 
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def multiple_occurences(self, A, B):
+        count = 0
+        for i in range(len(A)):
+            if A[i] == B:
+                count += 1
+        return count
+
+solution = Solution()
+print(solution.multiple_occurences(A = [1, 2, 2], B = 2)
