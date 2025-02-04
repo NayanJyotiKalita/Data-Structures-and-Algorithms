@@ -1,4 +1,3 @@
-'''
 Count of elements
 
 Problem Description
@@ -32,6 +31,19 @@ Explanation 1:
 The elements that have at least 1 element greater than itself are 1 and 2
 Explanation 2:
 The elements that have at least 1 element greater than itself is 3
-'''
 
 CODE:
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def count_elt(self, A):
+        maxi = max(A)
+        count = 0
+        for i in range(len(A)):
+            if A[i] != maxi:
+                count += 1
+        return count            
+
+solution = Solution()
+print(solution.count_elt(A = [3, 1, 2])
