@@ -1,4 +1,3 @@
-'''
 Q2. Time to equality
 
 Problem Description
@@ -22,5 +21,15 @@ Example Output
 
 Example Explanation
 We can change the array A = [4, 4, 4, 4, 4]. The time required will be 8 seconds.
-'''
+
 CODE:
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def time_to_equality(self, A):
+        count = 0
+        maxi = max(A)
+        for i in range(len(A)):
+            count += maxi - A[i]
+        return count
