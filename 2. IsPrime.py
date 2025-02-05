@@ -45,4 +45,19 @@ class Solution:
             i += 1
         return int(A >= 2)
 
+'or'
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def isprime(self, A):
+        ans = True
+        for i in range(2, int(A**0.5)+1):
+            if A % i == 0:
+                ans = False
+                break
+        if ans == False or A == 1:
+            return 0 
+        else:
+            return 1
+
 solution = Solution()
