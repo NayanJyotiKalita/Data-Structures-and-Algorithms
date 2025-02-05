@@ -47,5 +47,21 @@ class Solution:
             i += 1
         return count
 
+'or'
+
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def solve(self, A):
+        count = 0
+        for i in range(1, int(A**0.5+1)):
+            if A % i == 0:
+                if A // i == i:
+                   count += 1
+                else :
+                    count += 2
+        return count
+
+
 solution = Solution()
 print(solution.count_of_factors(A = 5))
