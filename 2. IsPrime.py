@@ -46,6 +46,7 @@ class Solution:
         return int(A >= 2)
 
 'or'
+
 class Solution:
     # @param A : integer
     # @return an integer
@@ -60,4 +61,22 @@ class Solution:
         else:
             return 1
 
+'or'
+
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def isprime(self, A):
+        if A < 2:
+            return 0
+        elif A == 2 or A == 3:
+            return 1
+        else:
+            for i in range(2, int(A**0.5)+1):
+                if A % i == 0:
+                    return 0
+        return 1
+
+
+        
 solution = Solution()
