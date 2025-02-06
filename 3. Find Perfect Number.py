@@ -36,7 +36,7 @@ For A = 6, the sum of its proper divisors = 1 + 2 + 3 = 6, is equal to 6.
 
 CODE
 
-def solve(self, A):
+def perfect_num(self, A):
     summ = 0
     for i in range(1, A//2 + 1):
         if A % i == 0:
@@ -47,3 +47,4 @@ def solve(self, A):
         return 0
 
 solution = Solution()
+print(solution.perfect_num(A = 4))
