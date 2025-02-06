@@ -77,6 +77,24 @@ class Solution:
                     return 0
         return 1
 
+'or'
 
-        
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def isprime(self, A):
+        factors = 0
+        for i in range(1, int(A**0.5)+1):
+            if A % i == 0:
+                if i == A//i:
+                    factors += 1
+                else:
+                    factors += 2
+        if factors == 2:
+            return 1
+        else:
+            return 0
+
+
 solution = Solution()
+print(solution.isprime(A = 5))
