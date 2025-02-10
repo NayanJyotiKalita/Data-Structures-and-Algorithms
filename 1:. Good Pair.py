@@ -1,4 +1,3 @@
-'''
 Q. Good Pair
 
 Problem Description
@@ -34,20 +33,30 @@ Output 2:
 0
 Output 3:
 1
-'''
+
 
 CODE:
 1.
-def solve(self, A, B):
-    freq = {}
-    for num in A:
-        if B - num in freq:
-            return 1
-        freq[num] = True
-    return 0
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def good_pair(self, A, B):
+        freq = {}
+        for num in A:
+            if B - num in freq:
+                return 1
+            freq[num] = True
+        return 0
 
 optional codes:
-1. Hashset
+
+2. Hashset
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def good_pair(self, A, B):
     hs = set()
     for i in range(len(A)):
         if B - A[i] in hs:
@@ -55,7 +64,12 @@ optional codes:
         hs.add(A[i])
     return 0
 
-2. Hashmap (Dictionary)
+3. Hashmap (Dictionary)
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def good_pair(self, A, B):
     hm = {}
     for i in range(len(A)):
         if A[i] in hm:
@@ -70,6 +84,11 @@ optional codes:
     return 0
 
 3. Brute Force
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def good_pair(self, A, B):
     for i in range(len(A)-1):
         for j in range(i+1, len(A)):
             if A[i] + A[j] == B:
@@ -77,3 +96,4 @@ optional codes:
     return 0
 
 solution = Solution()
+print(solution.good_pair(A = [1,2,3,4]B = 7))
