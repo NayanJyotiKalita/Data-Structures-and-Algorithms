@@ -1,4 +1,3 @@
-'''
 Q. Reverse in a range
 
 Problem Description
@@ -31,12 +30,17 @@ Output 1:
 [1, 2, 4, 3]
 Output 2:
 [6, 5, 2]
-'''
-CODE:
 
-def solve(self, A, B, C):
-    for i in range((C-B+1)//2):
-        A[B+i], A[C-i] = A[C-i], A[B+i]
-    return A
+
+CODE:
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @param C : integer
+    # @return a list of integers
+    def solve(self, A, B, C):
+        for i in range((C-B+1)//2):
+            A[B+i], A[C-i] = A[C-i], A[B+i]
+        return A
 
 solution = Solution()
