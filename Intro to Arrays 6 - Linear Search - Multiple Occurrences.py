@@ -1,4 +1,4 @@
-Q 5. Linear Search - Multiple Occurences
+Linear Search - Multiple Occurences
 
 Problem Description
 Given an array A and an integer B, find the number of occurrences of B in A.
