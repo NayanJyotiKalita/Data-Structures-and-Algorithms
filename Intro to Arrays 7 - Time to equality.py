@@ -1,4 +1,4 @@
-Q2. Time to equality
+Time to equality
 
 Problem Description
 Given an integer array A of size N. In one second, you can increase the value of one element by 1.
@@ -54,4 +54,4 @@ class Solution:
         return total_time
 
 solution = Solution()
-print(solution.time_to_equality(A = [2, 4, 1, 3, 2])
+print(solution.time_to_equality(A = [2, 4, 1, 3, 2]))
