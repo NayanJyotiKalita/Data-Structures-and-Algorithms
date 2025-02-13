@@ -46,4 +46,4 @@ class Solution:
         return count            
 
 solution = Solution()
-print(solution.count_elt(A = [3, 1, 2])
+print(solution.count_elt(A = [3, 1, 2]))
