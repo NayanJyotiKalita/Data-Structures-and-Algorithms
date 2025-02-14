@@ -54,26 +54,18 @@ class Solution:
     # @param A : list of integers
     # @param B : list of list of integers
     # @return a list of integers
-    def solve(self, A, B):
+    def even_num_in_range(self, A, B):
         c = []
-        pref = [0] * len(A)
         count = 0
+        pref = [0] * len(A)
+            
         for i in range(len(A)):
             if A[i] % 2 == 0:
                 count += 1
                 pref[i] = count
             else:
                 pref[i] = pref[i - 1]
-        '''
-        for i in range(len(A)):
-            if A[i] % 2 == 0:
-                pref.append(1)
-            else:
-                pref.append(0)
-        
-        for i in range(1, len(pref)):
-            pref[i] = pref[i] + pref[i-1]
-        '''
+            
         for i in range(len(B)):
             count = 0
             l = B[i][0]
@@ -83,7 +75,45 @@ class Solution:
             else:
                 count = pref[r] - pref[l-1]
             c.append(count)
+             
         return c
 
+'or'
 
+class Solution:
+    # @param A : list of integers
+    # @param B : list of list of integers
+    # @return a list of integers
+    def even_num_in_range(self, A, B):
+        c = []
+        count = 0
+        pref = []
+             
+        for i in range(len(A)):
+            if A[i] % 2 == 0:
+                pref.append(1)
+            else:
+                pref.append(0)
+        
+        for i in range(1, len(pref)):
+            pref[i] = pref[i] + pref[i-1]
+        
+        for i in range(len(B)):
+            count = 0
+            l = B[i][0]
+            r = B[i][1]
+            if l == 0:
+                count = pref[r]
+            else:
+                count = pref[r] - pref[l-1]
+            c.append(count)
+             
+        return c
+                
+             
 solution =  Solution()
+print(solution.even_num_in_range(A = [2, 1, 8, 3, 9, 6],
+                                 B = [   [0, 3]
+                                         [3, 5]
+                                         [1, 3] 
+                                         [2, 4]   ]))
