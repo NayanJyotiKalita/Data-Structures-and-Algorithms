@@ -62,7 +62,7 @@ CODE:
 class Solution:
     # @param A : list of integers
     # @return an integer
-    def solve(self, A):
+    def equilibrium_index(self, A):
         n = len(A)
 
         for i in range(1, n):
@@ -86,6 +86,8 @@ class Solution:
             
             if left == right:
                 return i
+                
         return -1
 
 solution =  Solution()
+print(solution.equilibrium_index(A = [-7, 1, 5, 2, -4, 3, 0]))
