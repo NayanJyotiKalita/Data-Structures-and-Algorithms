@@ -1,12 +1,10 @@
 Generate all subarrays
 
-
 Problem Description
 You are given an array A of N integers.
 Return a 2D array consisting of all the subarrays of the array
 
 Note : The order of the subarrays in the resulting 2D array does not matter.
-
 
 Problem Constraints
 1 <= N <= 100
@@ -35,7 +33,7 @@ CODE:
 class Solution:
     # @param A : list of integers
     # @return a list of list of integers
-    def solve(self, A):
+    def all_subarrays(self, A):
         ans = []
         n = len(A)
         for si in range(n):
@@ -45,11 +43,13 @@ class Solution:
                     ls.append(A[k])
                 ans.append(ls)
         return ans
+        
 'or'
+
 class Solution:
     # @param A : list of integers
     # @return a list of list of integers
-    def solve(self, A):
+    def all_subarrays(self, A):
         ans = []
         for si in range(0, len(A)):
             for ei in range(si, len(A)):
@@ -57,3 +57,4 @@ class Solution:
         return ans
 
 solution = Solution()
+print(solution.all_subarrays(A = [5, 2, 1, 4]))
