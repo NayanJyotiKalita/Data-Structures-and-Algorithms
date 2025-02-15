@@ -1,6 +1,5 @@
 Subarray in given range
 
-
 Problem Description
 Given an array A of length N, return the subarray from B to C.
 
@@ -45,7 +44,7 @@ class Solution:
     # @param B : integer
     # @param C : integer
     # @return a list of integers
-    def solve(self, A, B, C):
+    def subarray_in_range(self, A, B, C):
         d = []
         for i in range(B, C+1):
             d.append(A[i])
@@ -53,8 +52,14 @@ class Solution:
 
 'or'
 
-    def solve(self, A, B, C):
-      return A[B : C + 1]
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @param C : integer
+    # @return a list of integers
+    def subarray_in_range(self, A, B, C):
+        return A[B : C + 1]
 
 
 solution = Solution()
+print(solution.subarray_in_range(A = [4, 3, 2, 6], B = 1, C = 3))
