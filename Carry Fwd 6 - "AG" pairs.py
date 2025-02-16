@@ -1,6 +1,5 @@
 Special Subsequences "AG" - 2
 
-
 Problem Description
 You have given a string A having Uppercase English letters.
 You have to find the number of pairs (i, j) such that A[i] = 'A', A[j] = 'G' and i < j.
@@ -34,10 +33,25 @@ Explanation 2:
 
  CODE:
 
+1. Brute Force - O(n^2) :
+
+class Solution:
+    # @param A : string
+     # @return an long
+    def count_AG_pairs(self, A):
+        count = 0
+        for i in range(len(A) - 1):
+            for j in range(i + 1, len(A)):
+                 if A[i] == 'A' and A[j] == 'g':
+                      count += 1
+        return count
+
+2. Optimised - Carry Forward - O(n) :
+
  class Solution:
     # @param A : string
      # @return an long
-    def solve(self, A):
+    def count_AG_pairs(self, A):
         countA = 0
         count = 0
         for i in range(len(A)):
