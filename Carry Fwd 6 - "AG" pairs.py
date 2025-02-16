@@ -51,7 +51,7 @@ class Solution:
 class Solution:
     # @param A : string
      # @return an long
-    def solve(self, A):
+    def scount_AG_pairs(self, A):
         pref_a = [0] * len(A)
         if A[0] == 'A':
             pref_a[0] = 1
@@ -84,3 +84,4 @@ class Solution:
         return count
 
 solution = Solution()
+print(solution.count_AG_pairs(A = "ABCGAG"))
