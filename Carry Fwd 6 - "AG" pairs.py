@@ -46,7 +46,29 @@ class Solution:
                       count += 1
         return count
 
-2. Optimised - Carry Forward - O(n) :
+2. Optimised - Prefix Sum - T.C. - O(n), S.C. - O(n) :
+
+class Solution:
+    # @param A : string
+     # @return an long
+    def solve(self, A):
+        pref_a = [0] * len(A)
+        if A[0] == 'A':
+            pref_a[0] = 1
+        for i in range(1, len(A)):
+            if A[i] == 'A':
+                pref_a[i] = pref_a[i - 1] + 1
+            else:
+                pref_a[i] = pref_a[i - 1]
+
+        count = 0
+        for i in range(1, len(A)):
+            if A[i] == 'G':
+                count += pref_a[i - 1]
+
+        return count
+
+3. Optimised - Carry Forward - T.C. - O(n), S.C. - O(n) :
 
  class Solution:
     # @param A : string
