@@ -1,6 +1,5 @@
 Counting Subarrays Easy
 
-
 Problem Description
 Given an array A of N non-negative numbers and a non-negative number B,
 you need to find the number of subarrays in A with a sum less than B.
@@ -44,7 +43,7 @@ class Solution:
     # @param A : list of integers
     # @param B : integer
     # @return an integer
-    def solve(self, A, B):
+    def counting_subarrays(self, A, B):
         count = 0
         for i in range(1, len(A)):
             A[i] = A[i-1] + A[i]
@@ -59,12 +58,14 @@ class Solution:
                 if summ < B:
                     count += 1
         return count
+     
 'or'
+
 class Solution:
     # @param A : list of integers
     # @param B : integer
     # @return an integer
-    def solve(self, A, B):
+    def counting_subarrays(self, A, B):
         count = 0
         for si in range(len(A)):
             carrysum = 0
@@ -75,3 +76,4 @@ class Solution:
         return count
 
 solution = Solution()
+print(solution.counting_subarrays(A = [1, 11, 2, 3, 15], B = 10))
