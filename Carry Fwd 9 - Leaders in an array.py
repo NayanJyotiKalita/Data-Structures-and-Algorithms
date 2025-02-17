@@ -1,6 +1,5 @@
 Leaders in an array
 
-
 Problem Description
 Given an integer array A containing N distinct integers, you have to find all the leaders in array A. An element is a leader if it is strictly greater than all the elements to its right side.
 NOTE: The rightmost element is always a leader.
@@ -43,7 +42,7 @@ CODE:
 class Solution:
     # @param A : list of integers
     # @return a list of integers
-    def solve(self, A):
+    def leaders_in_array(self, A):
         c = []
         maxi = A[len(A)-1]
         c. append(maxi)
@@ -54,3 +53,4 @@ class Solution:
         return c
 
 solution = Solution()
+print(solution.leaders_in_array(A = [16, 17, 4, 3, 5, 2]))
