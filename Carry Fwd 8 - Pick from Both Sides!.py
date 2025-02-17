@@ -6,12 +6,10 @@ You have to perform B operations. In one operation, you can remove either the le
 Find and return the maximum possible sum of the B elements that were removed after the B operations.
 
 NOTE: Suppose B = 3, and array A contains 10 elements, then you can:
-
 Remove 3 elements from front and 0 elements from the back, OR
 Remove 2 elements from front and 1 element from the back, OR
 Remove 1 element from front and 2 elements from the back, OR
 Remove 0 elements from front and 3 elements from the back.
-
 
 Problem Constraints
 1 <= N <= 105
@@ -51,7 +49,7 @@ class Solution:
     # @param A : list of integers
     # @param B : integer
     # @return an integer
-    def solve(self, A, B):
+    def pick_from_both_sides(self, A, B):
 
         for i in range(1, len(A)):
             A[i] = A[i-1] + A[i]
@@ -79,3 +77,4 @@ class Solution:
         return ans
 
 solution = Solution()
+print(solution.pick_from_both_sides(A = [2, 3, -1, 4, 2, 1], B = 4))
