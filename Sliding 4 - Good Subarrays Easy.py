@@ -1,6 +1,5 @@
 Good Subarrays Easy
 
-
 Problem Description
 Given an array of integers A, a subarray of an array is said to be good if it fulfills any one of the criteria:
 1. Length of the subarray is be even, and the sum of all the elements of the subarray must be less than B.
@@ -46,7 +45,7 @@ class Solution:
     # @param A : list of integers
     # @param B : integer
     # @return an integer
-    def solve(self, A, B):
+    def good_subarrays(self, A, B):
         for i in range(1, len(A)):
             A[i] = A[i-1] + A[i]
         count = 0
@@ -75,7 +74,7 @@ class Solution:
     # @param A : list of integers
     # @param B : integer
     # @return an integer
-    def solve(self, A, B):
+    def good_subarrays(self, A, B):
         for i in range(1, len(A)):
             A[i] = A[i-1] + A[i]
         count = 0
@@ -99,7 +98,7 @@ class Solution:
     # @param A : list of integers
     # @param B : integer
     # @return an integer
-    def solve(self, A, B):
+    def good_subarrays(self, A, B):
 
         for i in range(1, len(A)):
             A[i] = A[i-1] + A[i]
@@ -125,7 +124,7 @@ class Solution:
     # @param A : list of integers
     # @param B : integer
     # @return an integer
-    def solve(self, A, B):
+    def good_subarrays(self, A, B):
         n = len(A)
         count = 0
         for si in range(n):
@@ -141,3 +140,4 @@ class Solution:
         return count
 
 solution = Solution()
+print(solution.good_subarrays(A = [13, 16, 16, 15, 9, 16, 2, 7, 6, 17, 3, 9], B = 65))
