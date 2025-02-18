@@ -46,7 +46,7 @@ class Solution:
     # @param B : integer
     # @param C : integer
     # @return an integer
-    def solve(self, A, B, C):
+    def subarray_sum_length(self, A, B, C):
         ans = 0
         summ = 0
 
@@ -64,4 +64,23 @@ class Solution:
             j += 1
         return 0
 
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @param C : integer
+    # @return an integer
+    def subarray_sum_length(self, A, B, C):
+        sum = 0
+    	for i in range(len(A)):
+    		sum += A[i]
+    		if(i >= B):
+    		    sum -= A[i - B]
+    		if(sum == C and i >= B - 1):
+    		    return 1
+    	return 0
+
+
 solution = Solution()
+print(solution.subarray_sum_length(A = [4, 3, 2, 6, 1], B = 3, C = 11))
