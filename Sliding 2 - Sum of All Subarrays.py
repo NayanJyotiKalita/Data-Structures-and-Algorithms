@@ -1,6 +1,5 @@
 Sum of All Subarrays
 
-
 Problem Description
 You are given an integer array A of length N.
 You have to find the sum of all subarray sums of A.
@@ -49,3 +48,6 @@ class Solution:
         for i in range(len(A)):
             ans += A[i] * (i + 1) * (len(A) - i)
         return ans
+
+solution = Solution()
+print(solution.subarraySum(A = [2, 1, 3]))
