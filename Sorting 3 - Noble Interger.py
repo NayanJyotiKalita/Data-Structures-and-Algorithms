@@ -1,6 +1,5 @@
 Noble Integer
 
-
 Problem Description
 Given an integer array A, find if an integer p exists in the array such that the number of integers greater than p in the array equals p.
 
@@ -28,30 +27,30 @@ Output 2:
 
 CODE:
 
-class Solution:
+   class Solution:
 	# @param A : list of integers
 	# @return an integer
-	def solve(self, A):
+	def noble_int(self, A):
 	A.sort(reverse = True)
-        count = -1
-        count_sum = 0
-        if A[0] == 0:
-            return 1
-        for i in range(1, len(A)):
-            if A[i] != A[i-1]:
-                count_sum = i
-            if count_sum == A[i]:
-                count += 1
-                if count == 0:
-                    return 1
-        return count
+	count = -1
+	count_sum = 0
+	if A[0] == 0:
+	    return 1
+	for i in range(1, len(A)):
+	    if A[i] != A[i-1]:
+		count_sum = i
+	    if count_sum == A[i]:
+		count += 1
+		if count == 0:
+		    return 1
+	return count
 
 'or'
 
-class Solution:
+   class Solution:
 	# @param A : list of integers
 	# @return an integer
-	def solve(self, A):
+	def noble_int(self, A):
 	A.sort(reverse = True)
 	count = 0
         if A[0] == 0:
@@ -63,4 +62,23 @@ class Solution:
                 return 1
         return -1
 
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def solve(self, A):
+        inputSize = len(A)
+        A.sort()
+        start = A[0]
+        for i in range(inputSize):
+            if (start != A[i]) and (start == (inputSize - i)):
+                return 1
+            start = A[i]
+        if start == 0:
+            return 1
+        return -1
+
+
 solution = Solution()
+print(solution.noble_int(A = [3, 2, 1, 3]))
