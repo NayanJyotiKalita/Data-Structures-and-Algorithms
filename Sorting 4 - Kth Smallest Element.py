@@ -1,6 +1,5 @@
 Kth Smallest Element
 
-
 Problem Description
 Find the Bth smallest element in given array A .
 NOTE: Users should try to solve it in less than equal to B swaps.
@@ -66,3 +65,4 @@ class Solution:
 
 
 solution = Solution ()
+print(solution.kthsmallest(A = [2, 1, 4, 3, 2], B = 3))
