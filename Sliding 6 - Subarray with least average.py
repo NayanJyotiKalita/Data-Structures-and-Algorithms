@@ -1,6 +1,5 @@
 Subarray with least average
 
-
 Problem Description
 Given an array A of size N, find the subarray of size B with the least average.
 
@@ -44,7 +43,7 @@ class Solution:
     # @param A : list of integers
     # @param B : integer
     # @return an integer
-    def solve(self, A, B):
+    def subarray_with_least_average(self, A, B):
 
         idx = 0
         n = len(A)
@@ -68,3 +67,4 @@ class Solution:
         return idx
 
 solution = Solution()
+print(solutiom.subarray_with_least_average(A = [3, 7, 5, 20, -10, 0, 12], B = 2))
