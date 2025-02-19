@@ -1,6 +1,5 @@
 Elements Removal
 
-
 Problem Description
 Given an integer array A of size N. You can remove any element from the array in one operation.
 The cost of this operation is the sum of all elements in the array present before this operation.
@@ -42,7 +41,7 @@ CODE:
 class Solution:
     # @param A : list of integers
     # @return an integer
-    def solve(self, A):
+    def ele_removal(self, A):
         A.sort(reverse = True)
         summ = 0
         for i in range(len(A)):
@@ -54,7 +53,7 @@ class Solution:
 class Solution:
     # @param A : list of integers
     # @return an integer
-    def solve(self, A):
+    def ele_removal(self, A):
         n = len(A)
         # sort the given array
         A.sort()
@@ -67,3 +66,4 @@ class Solution:
         return ans
 
 solution = Solution()
+print(solution.ele_removal(A = [2, 1]))
