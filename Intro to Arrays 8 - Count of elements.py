@@ -45,5 +45,16 @@ class Solution:
                 count += 1
         return count            
 
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def solve(self, A):
+        maxi = max(A)
+        c = A.count(maxi)
+        return len(A) - c
+
+
 solution = Solution()
 print(solution.count_elt(A = [3, 1, 2]))
