@@ -1,6 +1,5 @@
 Arithmetic Progression
 
-
 Problem Description
 Given an integer array A of size N. Return 1 if the array can be arranged to form an arithmetic progression, otherwise return 0.
 A sequence of numbers is called an arithmetic progression if the difference between any two consecutive elements is the same.
@@ -38,7 +37,7 @@ CODE:
 class Solution:
     # @param A : list of integers
     # @return an integer
-    def solve(self, A):
+    def arithmetic_progression(self, A):
         A.sort()
         for i in range(1,len(A)-1):
             if A[i] - A[i-1] != A[i+1] - A[i]:
@@ -50,7 +49,7 @@ class Solution:
 class Solution:
     # @param A : list of integers
     # @return an integer
-    def solve(self, A):
+    def arithmetic_progression(self, A):
         n = len(A)
         A.sort()
         dif = A[1] - A[0]
@@ -62,3 +61,4 @@ class Solution:
         return ans
 
 solution = Solution()
+print(solution.arithmetic_progression(A = [3, 5, 1]))
