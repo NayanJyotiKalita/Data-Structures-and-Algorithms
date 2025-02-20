@@ -89,5 +89,23 @@ class Solution:
                 
         return -1
 
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def equilibrium_index(self, A):
+        lsum = 0
+        totalsum = sum(A)
+
+        for i in range(len(A)):
+            rsum = totalsum - lsum - A[i]
+
+            if lsum == rsum:
+                return i
+
+            lsum += A[i]
+
+
 solution =  Solution()
 print(solution.equilibrium_index(A = [-7, 1, 5, 2, -4, 3, 0]))
