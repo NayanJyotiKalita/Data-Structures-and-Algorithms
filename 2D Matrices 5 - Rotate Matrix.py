@@ -68,6 +68,11 @@ class Solution:
             for j in range(n//2):
                 A[i][j], A[i][n-j-1] = A[i][n-j-1], A[i][j]
         return A
+        ''' or
+        for i in range(n):
+            A[i] = A[i][::-1]
+        return A
+        '''
 
 solution = Solution()
 print(solution.rotate_matrix(A =  [
