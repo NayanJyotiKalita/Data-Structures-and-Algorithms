@@ -49,6 +49,18 @@ class Solution:
                     summ += A[i][j]
         return summ
 
+or
+
+class Solution:
+    # @param A : tuple of list of integers
+    # @return an integer
+    def minor_diagonal_sum(self, A):
+        N = len(A)
+        sum = 0
+        for i in range(0, N):
+            sum += A[i][N - 1 - i]
+        return sum
+     
 
 solution = Solution()
 print(solution.minor_diagonal_sum(A = [[1, -2, -3],
