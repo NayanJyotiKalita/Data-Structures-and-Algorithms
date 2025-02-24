@@ -35,7 +35,7 @@ Explanation 2:
 After transposing the matrix, A becomes [[1, 1, 1], [2, 2, 2]]
 
 CODE:
-
+'for n x m matrix where n != m'
 class Solution:
     # @param A : list of list of integers
     # @return a list of list of integers
@@ -47,6 +47,20 @@ class Solution:
                 inner_list.append(A[i][j])
             c.append(inner_list)
         return c
+
+'or'
+
+'for n x n matrix'
+class Solution:
+    # @param A : list of list of integers
+    # @return a list of list of integers
+    def matrix_transpose(self, A):
+        n = len(A)
+        for i in range(n):
+            for j in range(i+1, n):
+                A[i][j], A[j][i] = A[j][i], A[i][j]
+        return A
+
 
 solution = Solution()
 print(solution.matrix_transpose(A = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]))
