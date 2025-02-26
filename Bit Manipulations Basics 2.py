@@ -20,3 +20,4 @@ Choose the correct answer from below:
 5. 8
 
 Ans:
+5
