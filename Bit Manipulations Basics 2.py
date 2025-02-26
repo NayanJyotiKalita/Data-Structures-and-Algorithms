@@ -9,12 +9,14 @@ The number mentioned above if expressed in base 10 will give 8 + 1 = 9 since the
 What is the value (in base 10) of the binary number 10000?
 
 Choose the correct answer from below:
-12
+1. 12
 
-14
+2. 14
 
-16
+3. 16
 
-20
+4. 20
 
-8
+5. 8
+
+Ans:
