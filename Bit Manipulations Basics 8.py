@@ -1,6 +1,6 @@
 Bit Operations
 
-Given a=10, what will be the 0-th bit in a|1 ?
+Given a = 10, what will be the 0-th bit in a|1 ?
 
 Choose the correct answer from below:
 
@@ -10,3 +10,5 @@ Choose the correct answer from below:
 
 3. Cannot be determined
 
+Ans:
+2
