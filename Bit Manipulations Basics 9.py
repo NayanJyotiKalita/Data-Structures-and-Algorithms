@@ -11,3 +11,6 @@ Choose the correct answer from below:
 3. It gets set
 
 4. It remains same
+
+Ans:
+1
