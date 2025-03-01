@@ -1,4 +1,4 @@
-Bit Operations - 3
+MCQ: Bit Operations - 3
 
 What happens to the 0-th bit in a when we perform a = a^1 ?
 
