@@ -1,4 +1,4 @@
-Bit Operations
+MCQ: Bit Operations
 
 Given a = 10, what will be the 0-th bit in a|1 ?
 
