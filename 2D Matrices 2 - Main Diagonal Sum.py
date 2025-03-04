@@ -51,4 +51,4 @@ class Solution:
         return summ
 
 solution = Solution()
-print(solution.main_diagonal_sum(A = 3 3 1 -2 -3 -4 5 -6 -7 -8 9)
+print(solution.main_diagonal_sum(A = [3, 3, 1, -2, -3, -4, 5, -6, -7, -8, 9])
