@@ -42,6 +42,16 @@ class Solution:
                 return 0
         return 1
 
+or
+
+class Solution:
+    # @param A : list of characters
+    # @return an integer
+    def isalnum(self, A):
+        for i in A:
+            if not ( (ord(i) >= 65 and ord(i) <= 90 ) or (ord(i) >= 97 and ord(i) <= 122 ) or ( ord(i) >= 48 and ord(i) <= 57 ) )  :
+                return 0
+        return 1
 
 solution = Solution()
 print(solution.isalnum(A = ['S', 'c', 'a', 'l', 'e', 'r', 'A', 'c', 'a', 'd', 'e', 'm', 'y', '2', '0', '2', '0']))
