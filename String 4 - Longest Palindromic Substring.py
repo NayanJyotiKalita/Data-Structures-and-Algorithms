@@ -1,7 +1,7 @@
 Longest Palindromic Substring
 
 Problem Description
-Given a string A of size N, find and return the longest palindromic substring in A.
+Given a string A of size N, find and return the longest palindromic substring in A and its length.
 Substring of string A is A[i...j] where 0 <= i <= j < len(A)
 
 Palindrome string:
@@ -15,19 +15,19 @@ Input Format
 First and only argument is a string A.
 
 Output Format
-Return a string denoting the longest palindromic substring of string A.
+Return a list consisting the longest palindromic substring of string A and its length.
 
 Example Input
 Input 1:
-A = "aaaabaaa"
+A = aaaabaaa
 Input 2:
-A = "abba
+A = "abba"
 
 Example Output
 Output 1:
-"aaabaaa"
+["aaabaaa", 7]
 Output 2:
-"abba"
+["abba", 4]
 
 Example Explanation
 Explanation 1:
@@ -63,7 +63,7 @@ class Solution:
                 l -= 1
                 r += 1
 
-        return ''.join(B)
+        return [''.join(B), len(B)]
 
 
 solution = Solution()
