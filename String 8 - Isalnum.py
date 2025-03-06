@@ -53,5 +53,22 @@ class Solution:
                 return 0
         return 1
 
+or 
+
+class Solution:
+    # @param A : list of characters
+    # @return an integer
+    def isalnum(self, A):
+        for x in A:
+            if x >= 'a' and x <= 'z':
+                continue
+            if x >= 'A' and x <= 'Z':
+                continue
+            if x >= '0' and x <= '9':
+                continue
+            return 0
+        return 1
+
+
 solution = Solution()
 print(solution.isalnum(A = ['S', 'c', 'a', 'l', 'e', 'r', 'A', 'c', 'a', 'd', 'e', 'm', 'y', '2', '0', '2', '0']))
