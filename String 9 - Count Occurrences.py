@@ -44,5 +44,22 @@ class Solution:
                     count += 1
         return count
 
+or 
+
+class Solution:
+    # @param A : string
+    # @return an integer
+    def count_occurences(self, A):
+        s = A
+        prev = -1
+        ans = 0
+        cur = s.find("bob", prev+1)
+        while cur != -1:
+            ans += 1
+            prev = cur
+            cur = s.find("bob", prev+1)
+        return ans
+
+
 solution = Solution()
 print(solution.count_occurences(A = 'abobc'))
