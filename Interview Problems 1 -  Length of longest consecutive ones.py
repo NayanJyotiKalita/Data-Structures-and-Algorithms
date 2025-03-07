@@ -1,6 +1,6 @@
-Length of longest consecutive ones
+Length of longest consecutive ones (Swap)
 
-Problem Statement:
+Problem Description:
 Given a binary string A. It is allowed to do at most one swap between any 0 and 1. Find and return the length of the longest consecutive 1’s that can be achieved.
   
 Input Format
