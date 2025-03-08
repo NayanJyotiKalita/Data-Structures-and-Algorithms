@@ -49,3 +49,21 @@ class Solution:
             return 1
         else:
             return 0
+
+or
+
+class Solution:
+    # @param A : string
+    # @param B : string
+    # @return an integer
+    def solve(self, A, B):
+        counter = [0] * 26
+        for i in A:
+            counter[ord(i) - ord("a")] += 1
+        for i in B:
+            counter[ord(i) - ord("a")] -= 1
+        
+        for i in counter:
+            if i != 0:
+                return 0
+        return 1
