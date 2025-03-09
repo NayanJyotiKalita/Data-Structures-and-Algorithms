@@ -56,7 +56,7 @@ class Solution:
     # @param A : string
     # @param B : string
     # @return an integer
-    def solve(self, A, B):
+    def check_anagrams(self, A, B):
         counter = [0] * 26
         for i in A:
             counter[ord(i) - ord("a")] += 1
