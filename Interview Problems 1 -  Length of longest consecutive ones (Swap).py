@@ -53,3 +53,6 @@ class Solution:
         if ans < total_Ones:
             return ans + 1
         return ans
+
+solution = Solution()
+print(solution.longest_consecutive_ones_swap(A = "111000"))
