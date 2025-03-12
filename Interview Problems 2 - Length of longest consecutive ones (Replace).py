@@ -47,3 +47,6 @@ class Solution:
           if ans == 0 and n > 0:
                 ans = n
           return ans
+
+solution = Solution()
+print(solution.longest_consecutive_ones_replace(A = "111011101"))
