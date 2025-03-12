@@ -37,7 +37,7 @@ CODE:
 class Solution:
     # @param A : tuple of integers
     # @return an integer
-    def majorityElement(self, A):
+    def majorityElementn/2(self, A):
         maj = -1
         cnt = 0
         for i in range(len(A)):
@@ -53,3 +53,6 @@ class Solution:
         # print('maj', maj)
         # print('count', cnt)
         return maj
+
+solution = Solution()
+print(solution.majorityElementn/2(A = [2, 1, 2]))
