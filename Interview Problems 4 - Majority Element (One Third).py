@@ -39,7 +39,7 @@ CODE:
 class Solution:
     # @param A : tuple of integers
     # @return an integer
-    def repeatedNumber(self, A):
+    def majority_element_ome_third(self, A):
         n = len(A)
 
         if n==0:
@@ -88,3 +88,6 @@ class Solution:
             return second
             
         return -1
+
+solution = Solution()
+print(solution.majority_element_ome_third(A = [1, 2, 3, 1, 1]))
