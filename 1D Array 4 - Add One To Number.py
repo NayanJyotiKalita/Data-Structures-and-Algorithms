@@ -63,6 +63,23 @@ class Solution:
         
         return A[last+1:]
 
+'or'
 
+'This works too but is not efficient'
+class Solution:
+    # @param A : list of integers
+    # @return a list of integers
+    def plusOne(self, A):
+        for i in range(len(A)):
+            A[i] = str(A[i])
+        b = ''.join(A)
+        c = int(b) + 1
+        e = str(c)
+        d = list(e)
+        for i in range(len(d)):
+            d[i] = int(d[i])
+        return d
+
+    
 solution = Solution()
 print(solution.plusOne(A = [1, 2, 3]))
