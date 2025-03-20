@@ -80,3 +80,48 @@ class Solution:
         else:
             return ans
 
+'or'
+
+class Solution:
+    # @param A : string
+    # @return a list of integers
+    def flip(self, A):
+        A=list(A)
+        #print(A)
+        for i in range(len(A)):
+            if A[i] == "0":
+                A[i] = 1
+            else:
+                A[i] = -1
+        
+        #print(A)
+
+        max_sum = 0
+        current_sum = 0
+        start = -1
+        end = -1
+        temp = 0
+        
+        for i in range(len(A)):
+            #print("max_sum",max_sum)
+            current_sum = A[i]+max(0,current_sum)       
+            #print("current_sum",current_sum)
+            if current_sum > max_sum:
+                max_sum = max(current_sum,max_sum)
+                start = temp
+                end = i
+                #end=i
+                #print("start",start)
+            
+            if current_sum < 0:
+                temp = i+1
+                
+                #print("end",end)
+        if start == -1 and end == -1:
+            return []
+        else:
+            return [start+1, end+1]
+
+
+solution = Solution()
+print(solution.flip(A = "010"))
