@@ -83,4 +83,31 @@ class Solution:
     # @param B : integer
     # @return an integer
     def search_row_col_1009(self, A, B):
+        n = len(A)
+        m = len(A[0])
+        i = 0
+        j = m - 1
+        found = -1
         
+        while i < n and j >= 0:
+            if A[i][j]  == B:
+                found = True
+                while j > 0:
+                    #j -= 1
+                    if A[i][j-1] != B:
+                        #j += 1
+                        break
+                    else:
+                        j -= 1
+                break
+            elif B > A[i][j]:
+                i += 1
+            else:
+                j -= 1
+        
+        if found == -1:
+            return -1
+        else:
+            return ((i+1) * 1009 + (j+1))
+
+
