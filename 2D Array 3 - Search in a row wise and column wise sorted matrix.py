@@ -64,6 +64,7 @@ class Solution:
         i = 0
         j = m - 1
         ans = -1
+         
         while i < n and j >= 0:
             if A[i][j] < B:
                 i += 1
@@ -110,4 +111,39 @@ class Solution:
         else:
             return ((i+1) * 1009 + (j+1))
 
+'or'
 
+class Solution:
+    # @param A : list of list of integers
+    # @param B : integer
+    # @return an integer
+    def search_row_col_1009(self, A, B):
+        n = len(A)
+        m = len(A[0])
+        i = 0
+        j = m - 1
+        row=-1
+        col=-1
+        while(i<n and j>=0):
+            if(A[i][j]==B):
+                row=i
+                col=j
+                break
+            elif(A[i][j]<B):
+                i=i+1
+            else:
+                j=j-1
+
+        if(row==-1 and col==-1):
+            return -1
+        else:
+            for j in range(col,-1,-1):
+                if(A[row][j]==B):
+                    col=j
+            return ((row+1)*1009 + col+1)
+
+
+solution = Solution()
+print(solution.search_row_col_1009(A = [[1, 2, 3],
+                                        [4, 5, 6],
+                                        [7, 8, 9]], B = 2]))
