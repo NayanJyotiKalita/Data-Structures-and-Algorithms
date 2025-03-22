@@ -52,7 +52,7 @@ class Solution:
 
         for i in range(n):
             if A[i] <= 0:
-                A[i] = n+2
+                A[i] = n + 2
         
         for i in range(n):
             ele = abs(A[i])
@@ -62,9 +62,27 @@ class Solution:
         
         for i in range(n):
             if A[i] > 0:
-                return i+1
+                return i + 1
         
-        return n+1
+        return n + 1
 
 'or'
 
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def firstMissingPositive(self, A):
+        n = len(A)
+        a = [0] * (n + 1)
+
+        for i in range(n):
+            if A[i] >= 1 and A[i] <= n:
+                a[A[i] - 1] = 1
+        
+        for i in range(len(a)):
+            if a[i] == 0:
+                return i + 1
+
+
+solution = Solution()
+print(solution.firstMissingPositive( A = [3, 4, -1, 1] ))
