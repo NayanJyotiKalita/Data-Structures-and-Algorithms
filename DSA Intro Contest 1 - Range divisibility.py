@@ -67,3 +67,7 @@ CODE:
                 summ = A[r] - A[l-1]
             c.append(summ)
         return c 
+
+         
+solution = Solution()
+print(solution.range_divisibility( A = [2, 7, 14, 5, 7], B = [[0, 2], [2, 4]] ))
