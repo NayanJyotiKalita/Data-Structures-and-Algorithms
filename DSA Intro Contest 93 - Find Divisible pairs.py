@@ -63,3 +63,23 @@ CODE:
         
         return count
         
+'or'
+
+ class Solution:
+    # @param A : list of integers
+    # @param B : list of integers
+    # @return an long
+    def totalGoodPairs(self, A, B):
+        count = 0
+        for i in range(len(A)):
+            for j in range(1, int((A[i])**0.5+1)+1):
+                if A[i] % j == 0:
+                    if j in B:
+                        count += B.count(j)
+                    if A[i] // j == j:
+                        count += 1
+        return count
+
+
+solution = Solution()
+print(solution.totalGoodPairs( A = [1, 2, 4, 12], B = [2, 4] ))
