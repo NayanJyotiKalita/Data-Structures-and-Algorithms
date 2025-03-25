@@ -77,3 +77,7 @@ CODE:
             i += 1
             j += 1
         return 0 
+
+
+solution = Solution()
+print(solution.SuperStream_engineers( A = [30, 25, 40, 35, 20, 45, 50, 55, 22, 18, 15], B = 3, C = 30 ))
