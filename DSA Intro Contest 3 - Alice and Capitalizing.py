@@ -74,3 +74,7 @@ CODE:
                 c.append(A[i])
                 
         return ''.join(c)
+
+
+solution = Solution()
+print(solution.capitalizeFromChar( A = "coding is love", B = "l" ))
