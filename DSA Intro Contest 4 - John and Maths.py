@@ -43,3 +43,6 @@ CODE:
             if A[i] % 7 == 0 and i >= 2:
                 count += 1
         return count 
+
+
+solution = Solution()
