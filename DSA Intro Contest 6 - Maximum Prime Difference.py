@@ -71,3 +71,7 @@ CODE:
         if len(c) != 0:
             final = max(c) - min(c)
         return final 
+
+
+solution = Solution()
+print(solution.maximumPrimeDifference( A = [8, 4, 10, 7, 18] ))
