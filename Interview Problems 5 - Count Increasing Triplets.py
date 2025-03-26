@@ -36,7 +36,7 @@ CODE:
 class Solution:
     # @param A : list of integers
     # @return an integer
-    def count_increasing_triplets(self, A):
+    def increasing_triplets(self, A):
         ans = 0
         n = len(A)
         for i in range(1, n-1):
@@ -54,3 +54,7 @@ class Solution:
             ans += prod
             # print(ans)
         return ans
+
+
+solution = Solution()
+print( solution.increasing_triplets( A = [1, 2, 4, 3] ))
