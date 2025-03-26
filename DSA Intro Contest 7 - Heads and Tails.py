@@ -47,3 +47,7 @@ CODE:
                 count = 0
             ans = max(ans, count)
         return ans
+
+
+solution = Solution()
+print(solution.head_tail( A = "101110" ))
