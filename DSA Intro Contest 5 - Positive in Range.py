@@ -69,3 +69,7 @@ CODE:
                 summ = A[r] - A[l-1]
             c.append(summ)
         return c 
+
+
+solution = Solution()
+print(solution.positive_in_range( A = [1, -1, 0], B = [[0, 2], [1, 2]] ))
