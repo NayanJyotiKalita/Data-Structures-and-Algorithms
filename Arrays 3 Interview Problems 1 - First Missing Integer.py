@@ -43,6 +43,7 @@ First positive integer missing from the array is 1.
 
 CODE:
 
+'This code has constant space complexity'
 class Solution:
     # @param A : list of integers
     # @return an integer
@@ -68,6 +69,7 @@ class Solution:
 
 'or'
 
+'This code has a space complexity of O(N)'
 class Solution:
     # @param A : list of integers
     # @return an integer
