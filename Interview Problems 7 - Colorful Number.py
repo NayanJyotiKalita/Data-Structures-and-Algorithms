@@ -75,3 +75,7 @@ class Solution:
                     # print(hs)
 
         return 1
+
+
+solution = Solution()
+print(solution.colorful( A = 236 ))
