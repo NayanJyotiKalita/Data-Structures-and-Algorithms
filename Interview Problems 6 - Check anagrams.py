@@ -67,3 +67,7 @@ class Solution:
             if i != 0:
                 return 0
         return 1
+
+
+solution = Solution()
+print(solution.check_anagrams( A = "secure", B = "rescue" ))
