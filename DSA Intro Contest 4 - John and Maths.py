@@ -46,3 +46,4 @@ CODE:
 
 
 solution = Solution()
+print(solution. A = [14, 7, 21, 45, 23] ))
