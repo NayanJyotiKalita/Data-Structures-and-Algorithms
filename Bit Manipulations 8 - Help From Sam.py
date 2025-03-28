@@ -66,5 +66,21 @@ class Solution:
             if A & (1 << i) != 0:
                 cnt += 1
         return cnt
+
+'or'
+
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def solve(self, A):
+        ans = 0
+        while A > 0:
+            rem = A % 2
+            A = A // 2
+            if rem == 1:
+                ans += 1
+        return ans
         
-        
+
+solutoin = Solution()
+print(solutoin.solve( A = 5 ))
