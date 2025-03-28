@@ -55,3 +55,16 @@ class Solution:
             A = A >> 1
         return cnt
 
+'or'
+
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def solve(self, A):
+        cnt = 0
+        for i in range(32):
+            if A & (1 << i) != 0:
+                cnt += 1
+        return cnt
+        
+        
