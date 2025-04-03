@@ -46,6 +46,19 @@ class Solution:
         self.inc(n-1)
         print(n, end = " ")
 
+'or'
+
+class Solution:
+    # @param A : integer
+    def print_1toA(self, A):
+        def inc(A):
+            if A == 1:
+                print(1, end = " ")
+                return
+            inc(A-1)
+            print(A, end = " ")
+        inc(A)
+        print()
 
 solution = Solution()
 print(solution.print_1toA( A = 10 ))  --> O/p: 1 2 3 4 5 6 7 8 9 10
