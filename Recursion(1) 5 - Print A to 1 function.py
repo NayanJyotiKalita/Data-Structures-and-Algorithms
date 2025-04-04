@@ -43,6 +43,18 @@ class Solution:
             return
         print()
 
+'or'
+
+class Solution:
+    # @param A : integer
+    def print_Ato1(self, A):
+        if A == 1:
+            print(1, end = " ")
+            print()
+            return
+        else:
+            print(A, end = " ")
+            self.solve(A-1)
 
 solution = Solution()
 print(solution.print_Ato1( A = 10 )) --> O/P: 10 9 8 7 6 5 4 3 2 1 
