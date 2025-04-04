@@ -56,5 +56,17 @@ class Solution:
             print(A, end = " ")
             self.solve(A-1)
 
+'or'
+
+class Solution:
+    # @param A : integer
+    def solve(self, A):
+        def print_n(n):
+            print(n, end = " ")
+            if n > 1:
+                print_n(n-1)
+        print_n(A)
+        print()
+
 solution = Solution()
 print(solution.print_Ato1( A = 10 )) --> O/P: 10 9 8 7 6 5 4 3 2 1 
