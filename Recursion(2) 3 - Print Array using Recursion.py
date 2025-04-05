@@ -62,4 +62,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.PrintArray( A = [6, -2, 5, 3] ))
+print(solution.PrintArray( A = [6, -2, 5, 3] ))  -->  O/P: 6 -2 5 3 
