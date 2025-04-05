@@ -45,3 +45,21 @@ class Solution:
     def PrintArray(self, A):
         self.printA(A, 0)
         print()
+
+'or'
+
+class Solution:
+    # @param A : list of integers
+    def PrintArray(self, A):
+        def array(A, idx):
+            if idx == len(A):
+                return
+            print(A[idx], end = " ")
+            array(A, idx+1)
+
+        array(A, 0)
+        print()
+
+
+solution = Solution()
+print(solution.PrintArray( A = [6, -2, 5, 3] ))
