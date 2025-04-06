@@ -41,7 +41,7 @@ CODE:
 class Solution:
     # @param A : integer
     # @return an integer
-    def solve(self, A):
+    def sum_of_digits(self, A):
         if A < 10:
             return 1 if A == 1 else 0
         digit_sum = 0
@@ -49,3 +49,22 @@ class Solution:
             digit_sum += A % 10
             A //= 10
         return self.solve(digit_sum)
+
+'or'
+
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def sum_of_digits(self, A):
+        while A >= 10:
+            A = self.digitsum(A) 
+        return 1 if A == 1 else 0
+
+    def digitsum(self, n):
+        if n == 0:
+            return 0
+        return (n % 10) + self.digitsum(n // 10)
+
+
+solution = Solution()
+print(solution.sum_of_digits(  A = 83557 ))  -->  O/P: 1
