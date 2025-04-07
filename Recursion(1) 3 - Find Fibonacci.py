@@ -43,8 +43,8 @@ class Solution:
     def findAthFibonacci(self, A):
         if A <= 1:
             return A
-        return self.findAthFibonacci(A-1) + self.findAthFibonacci(A-2)
+        return self.findAthFibonacci(A-1) + self.findAthFibonacci(A-2)  
 
 
 solution = Solution()
-print(solution.findAthFibonacci( A = 9 ))
+print(solution.findAthFibonacci( A = 9 )) --> O/P: 34
