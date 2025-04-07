@@ -43,4 +43,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.factorial( A = 4 ))
+print(solution.factorial( A = 4 ))  --> O/P: 24
