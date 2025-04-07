@@ -1,6 +1,6 @@
 Print A to 1 function
 
-Problem Description
+Problem Description:
 You are given an integer A, print A to 1 using using recursion.
 Note :- After printing all the numbers from A to 1, print a new line.
 
