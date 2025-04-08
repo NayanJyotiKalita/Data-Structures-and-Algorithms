@@ -69,4 +69,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.missing_num( A = [5, 1, 3, 6] ))
+print(solution.missing_num( A = [5, 1, 3, 6] ))  -->  O/P: [2, 4]
