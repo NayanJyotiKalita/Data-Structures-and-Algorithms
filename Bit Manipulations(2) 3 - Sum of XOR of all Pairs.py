@@ -63,4 +63,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.sum_of_xor_of_AllPairs( A = [3, 4, 2] ))
+print(solution.sum_of_xor_of_AllPairs( A = [3, 4, 2] ))  -->  O/P: 14
