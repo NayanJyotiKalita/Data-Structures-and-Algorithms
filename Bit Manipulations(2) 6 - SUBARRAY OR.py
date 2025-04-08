@@ -80,4 +80,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.subarray_or( A = [1, 2, 3, 4, 5] ))
+print(solution.subarray_or( A = [1, 2, 3, 4, 5] ))  -->  O/P: 71
