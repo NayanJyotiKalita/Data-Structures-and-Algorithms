@@ -64,4 +64,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.strange_equality( A = 5 ))
+print(solution.strange_equality( A = 5 ))  -->  O/P: 10
