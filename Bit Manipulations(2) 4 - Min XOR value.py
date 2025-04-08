@@ -47,4 +47,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.findMinXor( A = [0, 2, 5, 7] ))
+print(solution.findMinXor( A = [0, 2, 5, 7] ))  -->  O/P: 2
