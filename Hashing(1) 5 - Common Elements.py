@@ -66,6 +66,38 @@ class Solution:
         
         return result
 
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @param B : list of integers
+    # @return a list of integers
+    def solve(self, A, B):
+        hm_A = {}
+        hm_B = {}
+
+        for i in A:
+            if i in hm_A:
+                hm_A[i] +=1
+            else:
+                hm_A[i] = 1
+        
+        for i in B:
+            if i in hm_B:
+                hm_B[i] += 1
+            else:
+                hm_B[i] = 1
+
+        result = []
+        for i in hm_A:
+            if i in hm_B:
+                count = min(hm_A[i], hm_B[i])
+                while count > 0:
+                    result.append(i)
+                    count -= 1
+                    
+        return result
+
 
 solution = Solution()
 print(solution.common_ele( A = [1, 2, 2, 1], B = [2, 3, 1, 2] ))  -->  O/P: [1, 2, 2]
