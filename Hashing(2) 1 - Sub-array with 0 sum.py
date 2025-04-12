@@ -57,3 +57,4 @@ class Solution:
 
 solution = Solution()
 print(solution.subarray_with_0_sum( A = [1, 2, 3, 4, 5] ))  -->  O/P: 0
+# print(solution.subarray_with_0_sum( A = [4, -1, 1] )) --> O/P: 1
