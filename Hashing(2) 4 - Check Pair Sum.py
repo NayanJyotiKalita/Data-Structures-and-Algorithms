@@ -56,3 +56,23 @@ class Solution:
             elif A-B[i] in hm:
                 return 1
         return 0
+
+'or'
+
+class Solution:
+    # @param A : integer
+    # @param B : list of integers
+    # @return an integer
+    def check_pair_sum(self, A, B):
+        hs = set()
+        ans = 0
+        for i in range(len(B)):
+            if A - B[i] in hs:
+                return 1
+            hs.add(B[i])
+        return 0
+
+
+solution = Solution()
+print(solution.check_pair_sum( B = [3, 5, 1, 2, 1, 2] ))  -->  O/P: 1
+print(solution.check_pair_sum( B = [9, 10, 7, 10, 9, 1, 5, 1, 5] ))  -->  O/P: 0
