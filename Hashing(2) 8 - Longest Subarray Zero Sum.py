@@ -53,6 +53,26 @@ class Solution:
             return ans
         return 0
 
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def longest_subarray_0_sum(self, A):
+        pref = {}
+        curr = 0
+        pref[0] = 0
+        ans = 0
+        
+        for i in range(1,len(A) + 1):
+
+            curr += A[i - 1]
+            if curr in pref:
+                ans = max(ans, i - pref[curr])
+            else:
+                pref[curr] = i
+        return ans
+
 
 solution = Solution()
 print(solution.longest_subarray_0_sum( A = [1, -2, 1, 2] ))  -->  O/P: 3
