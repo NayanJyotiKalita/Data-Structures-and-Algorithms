@@ -59,3 +59,27 @@ class Solution:
             return 1
         else:
             return 0
+
+'or'
+
+import functools
+class Solution:
+    # @param A : list of integers
+    # @return a strings
+    def largestNumber(self, A):
+        A = list(map(str,A))
+        # print(A)
+        A = sorted(A, key = functools.cmp_to_key(self.compare))
+        return "".join(A).lstrip('0') or "0"
+
+    def compare(self, v1, v2):
+        if v1+v2 > v2+v1:
+            return -1
+        elif v1+v2 < v2+v1:
+            return 1
+        else:
+            return 0
+
+
+solution = Solution()
+print(solution.largestNumber(  A = [3, 30, 34, 5, 9] ))  -->  O/P: "9534330"
