@@ -50,3 +50,66 @@ class Solution:
         temp.sort()
         A[B:C+1] = temp
         return A
+
+'or'
+
+class Solution:
+    # Merge two sorted arrays
+    def merge(self, sorted, left, mid, right):
+        m1 = mid - left + 1
+        m2 = right - mid
+
+        arr1 = [0] * m1
+        arr2 = [0] * m2
+
+        i = j = 0
+        k = left
+
+        while i < m1:
+            arr1[i] = sorted[left + i]
+            i += 1
+
+        while j < m2:
+            arr2[j] = sorted[mid + 1 + j]
+            j += 1
+
+        i = j = 0
+        while i < m1 and j < m2:
+            if arr1[i] <= arr2[j]:
+                sorted[k] = arr1[i]
+                i += 1
+            else:
+                sorted[k] = arr2[j]
+                j += 1
+            k += 1
+
+        while i < m1:
+            sorted[k] = arr1[i]
+            i += 1
+            k += 1
+
+        while j < m2:
+            sorted[k] = arr2[j]
+            j += 1
+            k += 1
+
+    # Merge Sort implementation
+    def mergeSort(self, A, L, R):
+        if L < R:
+            M = (L + R) // 2
+
+            # Divide
+            self.mergeSort(A, L, M)
+            self.mergeSort(A, M + 1, R)
+
+            # Conquer
+            self.merge(A, L, M, R)
+
+    # Sort the subarray specified by indices B and C
+    def sortSubarray(self, A, B, C):
+        self.mergeSort(A, B, C)
+        return A
+
+
+solution = Solution()
+print(solution.sortSubarray( A = [59, 11, 8, 91, 49, 44, 8], B = 4, C = 6 ))  -->  O/P: [59, 11, 8, 91, 8, 44, 49]
