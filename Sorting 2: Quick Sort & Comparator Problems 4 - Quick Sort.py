@@ -72,3 +72,41 @@ class Solution:
             
             #print("Quicksort2","A",A,"start",pivotidx+1, "end",end)
             self.quicksort(A, pivotidx+1, end)
+
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @return a list of integers
+    def solve(self, A):
+        self.quicksort(A, 0, len(A) - 1)
+        return A
+    
+    def quicksort(self, A, start, end):
+        if start >= end:
+            return
+        pivot = self.partition(A, start, end)
+        self.quicksort(A, start, pivot - 1)
+        self.quicksort(A, pivot + 1, end)
+        
+    def partition(self, A, s, e):
+        p = A[s]
+        i = s + 1
+
+        for j in range(s + 1, e + 1):
+            if A[j] <= p:
+                A[i], A[j] = A[j], A[i]
+                i += 1
+
+        A[s], A[i - 1] = A[i - 1], A[s]
+
+        # for j in range(i, e + 1):
+        #     if A[j] == p:
+        #         A[i], A[j] = A[j], A[i]
+        #         break
+
+        return i - 1
+
+
+solution = Solution()
+print(solution.solve( A = [1, 4, 10, 2, 1, 5] ))  -->  O/P: [1, 1, 2, 4, 5, 10]
