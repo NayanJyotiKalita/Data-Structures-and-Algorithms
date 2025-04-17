@@ -100,10 +100,12 @@ class Solution:
 
         A[s], A[i - 1] = A[i - 1], A[s]
 
-        # for j in range(i, e + 1):
-        #     if A[j] == p:
-        #         A[i], A[j] = A[j], A[i]
-        #         break
+        '''the code also works without using this block
+        for j in range(i, e + 1):
+            if A[j] == p:
+                A[i], A[j] = A[j], A[i]
+                break
+        '''
 
         return i - 1
 
