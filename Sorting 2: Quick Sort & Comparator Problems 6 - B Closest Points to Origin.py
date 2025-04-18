@@ -69,3 +69,5 @@ class Solution:
         return ans
 
 
+solution = Solution()
+print(solution.closest_point(  A = [[1, 3], [-2, 2]], B = 1 ))  -->  O/P:  [ [-2, 2] ]
