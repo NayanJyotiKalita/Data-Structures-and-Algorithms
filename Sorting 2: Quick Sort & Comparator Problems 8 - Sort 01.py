@@ -39,3 +39,18 @@ class Solution:
     def compare(self, v1, v2):
         return v1 - v2
 
+'or'
+
+class Solution:
+    # @param A : list of integers
+    # @return a list of integers
+    def sort01(self, A):
+        n = len(A)
+        i, j = 0, n - 1
+        while i < j:
+            if A[i] == 1:
+                A[i], A[j] = A[j], A[i]
+                j -= 1
+            else:
+                i += 1
+        return A
