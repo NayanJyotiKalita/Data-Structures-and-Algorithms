@@ -54,3 +54,20 @@ class Solution:
             else:
                 i += 1
         return A
+
+'or'
+
+import functools
+class Solution:
+    # @param A : list of integers
+    # @return a list of integers
+    def sort01(self, A):
+        zeros=A.count(0)
+        ones=len(A)-zeros
+        A=[0]*len(A)
+        if zeros==len(A):
+            return A 
+        else:
+            for i in range(zeros,len(A)):
+                A[i]=1
+        return A
