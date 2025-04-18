@@ -71,3 +71,7 @@ class Solution:
             for i in range(zeros,len(A)):
                 A[i]=1
         return A
+
+
+solution = Solution()
+print(solution.sort01( A = [0,0,1,0,1,1,0] )  -->  O/P: [0,0,0,0,1,1,1]
