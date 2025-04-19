@@ -48,3 +48,5 @@ class Solution:
     		return A
 
 
+solution = Solution()
+print(solution.wave( A = [1, 2, 3, 4] ))  -->  O/P: [2, 1, 4, 3]
