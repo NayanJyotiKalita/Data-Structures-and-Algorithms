@@ -33,3 +33,7 @@ class Solution:
         p1 = A[n-1] * A[n-2] * A[n-3]
         p2 = A[0] * A[1] * A[n-1]
         return max(p1, p2) 
+
+
+solution = Solution()
+print(solution.maxp3( A = [0, -1, 3, 100, 70, 50] ))  -->  O/P: 350000
