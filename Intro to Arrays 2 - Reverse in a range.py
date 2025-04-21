@@ -73,4 +73,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.reverse_in_range(A = [1, 2, 3, 4], B = 2, C = 3))
+print(solution.reverse_in_range(A = [1, 2, 3, 4], B = 2, C = 3))  -->  O/P: [1, 2, 4, 3]
