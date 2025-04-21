@@ -95,5 +95,7 @@ class Solution:
                 return 1
     return 0
 
+
 solution = Solution()
-print(solution.good_pair(A = [1,2,3,4]B = 7))
+print(solution.good_pair( A = [1,2,3,4], B = 7 ))  -->  O/P: 1
+print(solution.good_pair( A = [1,2,4], B = 4 ))  -->  O/P: 0
