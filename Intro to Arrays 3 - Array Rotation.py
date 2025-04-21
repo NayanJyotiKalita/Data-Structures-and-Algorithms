@@ -1,4 +1,4 @@
-Q. Array Rotation
+Array Rotation
 
 Problem Description
 Given an integer array A of size N and an integer B, you have to return the same array after rotating it B times towards the right.
@@ -58,4 +58,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.array_rotation(A = [1, 2, 3, 4], B = 2))
+print(solution.array_rotation(A = [1, 2, 3, 4], B = 2))  -->  O/P: [3, 4, 1, 2]
