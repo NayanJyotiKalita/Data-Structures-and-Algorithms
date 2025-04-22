@@ -102,4 +102,4 @@ class Solution:
         return ans
 
 solution = Solution()
-print(solution.closest_minmax(A = [1, 3, 2]))
+print(solution.closest_minmax( A = [2, 6, 1, 6, 9] ))  -->  O/P: 3
