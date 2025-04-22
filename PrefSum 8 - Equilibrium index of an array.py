@@ -108,4 +108,4 @@ class Solution:
 
 
 solution =  Solution()
-print(solution.equilibrium_index(A = [-7, 1, 5, 2, -4, 3, 0]))
+print(solution.equilibrium_index(A = [-7, 1, 5, 2, -4, 3, 0]))  -->  O/P: 3
