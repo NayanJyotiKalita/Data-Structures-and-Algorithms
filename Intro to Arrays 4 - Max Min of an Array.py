@@ -50,4 +50,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.max_min(A = [-2, 1, -4, 5, 3]))
+print(solution.max_min(A = [-2, 1, -4, 5, 3]))  -->  O/P: 1
