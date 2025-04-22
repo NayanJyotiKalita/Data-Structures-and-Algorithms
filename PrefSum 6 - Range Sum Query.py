@@ -64,4 +64,5 @@ class Solution:
             c.append(sum)
         return c
       
-solution =  Solution()
+solution = Solution()
+print(solution.rangeSum( A = [1, 2, 3, 4, 5], B = [[0, 3], [1, 2]] ))  -->  O/P: [10, 5]
