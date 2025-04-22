@@ -76,4 +76,4 @@ class Solution:
         return count
 
 solution = Solution()
-print(solution.counting_subarrays(A = [1, 11, 2, 3, 15], B = 10))
+print(solution.counting_subarrays(A = [1, 11, 2, 3, 15], B = 10))  -->  O/P: 4
