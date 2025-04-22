@@ -42,4 +42,4 @@ class Solution:
         return A
 
 solution = Solution()
-print(solution.in_place_psum(A = [1, 2, 3, 4, 5]))
+print(solution.in_place_psum(A = [1, 2, 3, 4, 5]))  -->  O/P: [1, 3, 6, 10, 15]
