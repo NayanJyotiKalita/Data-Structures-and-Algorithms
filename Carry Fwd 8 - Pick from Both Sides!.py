@@ -76,5 +76,6 @@ class Solution:
         
         return ans
 
+
 solution = Solution()
-print(solution.pick_from_both_sides(A = [2, 3, -1, 4, 2, 1], B = 4))
+print(solution.pick_from_both_sides(A = [2, 3, -1, 4, 2, 1], B = 4))  -->  O/P: 9
