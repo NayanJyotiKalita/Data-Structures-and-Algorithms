@@ -81,4 +81,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.noble_int(A = [3, 2, 1, 3]))
+print(solution.noble_int(A = [3, 2, 1, 3]))  -->  O/P: 1
