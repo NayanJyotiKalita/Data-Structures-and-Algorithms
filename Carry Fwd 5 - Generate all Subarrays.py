@@ -56,5 +56,6 @@ class Solution:
                 ans.append(A[si:ei+1])
         return ans
 
+
 solution = Solution()
-print(solution.all_subarrays(A = [5, 2, 1, 4]))
+print(solution.all_subarrays(A = [5, 2, 1, 4]))  -->  O/P: [[1], [1, 4], [2], [2, 1], [2, 1, 4], [4], [5], [5, 2], [5, 2, 1], [5, 2, 1, 4]]
