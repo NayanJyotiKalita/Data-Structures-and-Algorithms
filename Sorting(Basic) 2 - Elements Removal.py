@@ -65,5 +65,6 @@ class Solution:
             count += 1
         return ans
 
+
 solution = Solution()
-print(solution.ele_removal(A = [2, 1]))
+print(solution.ele_removal(A = [2, 1]))  -->  O/P: 4
