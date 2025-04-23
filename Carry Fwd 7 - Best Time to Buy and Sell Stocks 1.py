@@ -68,4 +68,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.maxProfit(A = [1, 4, 5, 2, 4]))
+print(solution.maxProfit(A = [1, 4, 5, 2, 4]))  -->  O/P: 4
