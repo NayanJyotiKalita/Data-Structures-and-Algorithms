@@ -62,4 +62,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.subarray_in_range(A = [4, 3, 2, 6], B = 1, C = 3))
+print(solution.subarray_in_range(A = [4, 3, 2, 6], B = 1, C = 3))  -->  O/P: [3, 2, 6]
