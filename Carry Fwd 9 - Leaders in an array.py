@@ -52,5 +52,6 @@ class Solution:
                 c.append(maxi)
         return c
 
+
 solution = Solution()
-print(solution.leaders_in_array(A = [16, 17, 4, 3, 5, 2]))
+print(solution.leaders_in_array(A = [16, 17, 4, 3, 5, 2]))  -->  O/P: [17, 2, 5]
