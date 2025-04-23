@@ -83,5 +83,6 @@ class Solution:
                 count += countA
         return count
 
+
 solution = Solution()
-print(solution.count_AG_pairs(A = "ABCGAG"))
+print(solution.count_AG_pairs(A = "ABCGAG"))  -->  O/P: 3
