@@ -65,4 +65,4 @@ class Solution:
 
 
 solution = Solution ()
-print(solution.kthsmallest(A = [2, 1, 4, 3, 2], B = 3))
+print(solution.kthsmallest(A = [2, 1, 4, 3, 2], B = 3))  -->  O/P: 2
