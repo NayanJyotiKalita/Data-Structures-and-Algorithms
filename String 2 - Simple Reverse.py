@@ -41,4 +41,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.simple_reverse(A = 'scaler'))
+print(solution.simple_reverse(A = 'scaler'))  -->  O/P: relacs
