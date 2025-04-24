@@ -47,4 +47,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.reverse_string(A = "the sky is blue"))
+print(solution.reverse_string(A = "the sky is blue"))  -->  O/P: "blue is sky the"
