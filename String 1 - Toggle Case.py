@@ -48,4 +48,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.toggle_case(A = "tHiSiSaStRiNg")
+print(solution.toggle_case(A = "tHiSiSaStRiNg")  -->  O/P: ThIsIsAsTrInG
