@@ -71,4 +71,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.isalnum(A = ['S', 'c', 'a', 'l', 'e', 'r', 'A', 'c', 'a', 'd', 'e', 'm', 'y', '2', '0', '2', '0']))
+print(solution.isalnum(A = ['S', 'c', 'a', 'l', 'e', 'r', 'A', 'c', 'a', 'd', 'e', 'm', 'y', '2', '0', '2', '0']))  -->  O/P: 1
