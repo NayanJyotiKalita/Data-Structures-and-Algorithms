@@ -63,4 +63,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.string_operation(A="AbcaZeoB"))
+print(solution.string_operation(A="AbcaZeoB"))  -->  O/P: "bc###bc###"
