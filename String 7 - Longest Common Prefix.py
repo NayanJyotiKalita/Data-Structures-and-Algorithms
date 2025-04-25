@@ -56,4 +56,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.longestCommonPrefix(A = ["abcdefgh", "aefghijk", "abcefgh"]))
+print(solution.longestCommonPrefix(A = ["abcdefgh", "aefghijk", "abcefgh"]))  -->  O/P: "a"
