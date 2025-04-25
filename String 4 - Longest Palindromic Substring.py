@@ -67,4 +67,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.longestPalindrome(A = "aaaabaaa"))
+print(solution.longestPalindrome(A = "aaaabaaa"))  -->  O/P: ["aaabaaa", 7]
