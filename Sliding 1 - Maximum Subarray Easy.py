@@ -57,5 +57,6 @@ class Solution:
                     summ = max(summ, currsm)
         return summ
 
+
 solution = Solution()
-print(solution.maxSubarray(A = 5, B = 12, C = [2, 1, 3, 4, 5]))
+print(solution.maxSubarray(A = 5, B = 12, C = [2, 1, 3, 4, 5]))  -->  O/P: 12
