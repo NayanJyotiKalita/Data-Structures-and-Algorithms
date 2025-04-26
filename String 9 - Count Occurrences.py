@@ -62,4 +62,5 @@ class Solution:
 
 
 solution = Solution()
-print(solution.count_occurences(A = 'abobc'))
+print(solution.count_occurences(A = 'abobc'))  -->  O/P: 1
+print(solution.count_occurences(A = 'bobob'))  -->  O/P: 2
