@@ -40,6 +40,11 @@ Output 2:
 Example Explanation
 Explanation 1:
 The perimeter is the 16 yellow stripes in the image below.
+        
+Explanation 2:
+There is a single cell containing 1. Hence, the perimeter is 4.
 
 CODE:
 
+class Solution:
+    
