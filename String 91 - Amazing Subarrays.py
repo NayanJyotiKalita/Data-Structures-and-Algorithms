@@ -41,5 +41,6 @@ class Solution:
                 count += len(A) - i
         return count % 10003
 
+
 solution = Solution()
-print(solution.amazing_subarrays(A = 'ABEC'))
+print(solution.amazing_subarrays(A = 'ABEC'))  -->  O/P: 6
