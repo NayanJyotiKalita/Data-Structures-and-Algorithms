@@ -49,5 +49,6 @@ class Solution:
             ans += A[i] * (i + 1) * (len(A) - i)
         return ans
 
+
 solution = Solution()
-print(solution.subarraySum(A = [2, 1, 3]))
+print(solution.subarraySum(A = [2, 1, 3]))  -->  O/P: 19
