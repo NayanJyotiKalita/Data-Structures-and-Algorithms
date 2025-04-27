@@ -83,4 +83,5 @@ class Solution:
 
 
 solution = Solution()
-print(solution.subarray_sum_length(A = [4, 3, 2, 6, 1], B = 3, C = 11))
+print(solution.subarray_sum_length(A = [4, 3, 2, 6, 1], B = 3, C = 11))  -->  O/P: 1
+print(solution.subarray_sum_length(A = [4, 2, 2, 5, 1], B = 4, C = 6))  -->  O/P: 0
