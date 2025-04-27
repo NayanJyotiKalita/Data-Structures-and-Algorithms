@@ -139,5 +139,6 @@ class Solution:
 
         return count
 
+
 solution = Solution()
-print(solution.good_subarrays(A = [13, 16, 16, 15, 9, 16, 2, 7, 6, 17, 3, 9], B = 65))
+print(solution.good_subarrays(A = [13, 16, 16, 15, 9, 16, 2, 7, 6, 17, 3, 9], B = 65))  -->  O/P: 36
