@@ -66,5 +66,6 @@ class Solution:
 
         return idx
 
+
 solution = Solution()
-print(solutiom.subarray_with_least_average(A = [3, 7, 5, 20, -10, 0, 12], B = 2))
+print(solutiom.subarray_with_least_average(A = [3, 7, 5, 20, -10, 0, 12], B = 2))  -->  O/P: 4
