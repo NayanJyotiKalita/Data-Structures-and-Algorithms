@@ -124,4 +124,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.flip(A = "010"))
+print(solution.flip(A = "010"))  -->  O/P: [1, 1]
