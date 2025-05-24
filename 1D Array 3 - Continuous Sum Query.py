@@ -61,4 +61,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.beggars_question(A = 5, B = [[1, 2, 10], [2, 3, 20], [2, 5, 25]]))
+print(solution.beggars_question(A = 5, B = [[1, 2, 10], [2, 3, 20], [2, 5, 25]]))  -->  O/P: 10 55 45 25 25
