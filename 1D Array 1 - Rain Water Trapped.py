@@ -62,4 +62,4 @@ class Solution:
         return total
 
 solution = Solution()
-print(solution.trap(A = [0, 1, 0, 2]))
+print(solution.trap(A = [0, 1, 0, 2]))  -->  O/P: 1
