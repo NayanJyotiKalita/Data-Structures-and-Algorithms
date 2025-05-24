@@ -82,4 +82,4 @@ class Solution:
 
     
 solution = Solution()
-print(solution.plusOne(A = [1, 2, 3]))
+print(solution.plusOne(A = [1, 2, 3]))  -->  O/P: 124
