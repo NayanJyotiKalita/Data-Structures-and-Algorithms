@@ -54,4 +54,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.sum_of_all_submatrices(A = [[1, 1], [1, 1]]))
+print(solution.sum_of_all_submatrices(A = [[1, 1], [1, 1]]))  -->  O/P: 16
