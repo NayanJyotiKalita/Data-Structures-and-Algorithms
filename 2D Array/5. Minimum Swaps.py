@@ -84,4 +84,4 @@ class Solution:
 
 
 solution = Solution()
-print(solution.minimum_swaps( A = [1, 12, 10, 3, 14, 10, 5], B = 8 ))
+print(solution.minimum_swaps( A = [1, 12, 10, 3, 14, 10, 5], B = 8 ))  -->  O/P: 2
