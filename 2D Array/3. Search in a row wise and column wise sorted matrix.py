@@ -146,4 +146,4 @@ class Solution:
 solution = Solution()
 print(solution.search_row_col_1009(A = [[1, 2, 3],
                                         [4, 5, 6],
-                                        [7, 8, 9]], B = 2]))
+                                        [7, 8, 9]], B = 2]))  -->  O/P: 1011
