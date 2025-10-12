@@ -1,15 +1,17 @@
-## Even numbers in a range
+# Even numbers in a range
 
-Problem Description
-You are given an array A of length N and Q queries given by the 2D array B of size Q×2.
-Each query consists of two integers B[i][0] and B[i][1].
-For every query, your task is to find the count of even numbers in the range from A[B[i][0]] to A[B[i][1]].
+## Problem Description
+You are given an array A of length N and Q queries given by the 2D array B of size Q×2. </br>
+Each query consists of two integers B[i][0] and B[i][1]. </br>
+For every query, your task is to find the count of even numbers in the range from A[B[i][0]] to A[B[i][1]]. </br>
 
-Problem Constraints
-1 <= N <= 105
-1 <= Q <= 105
-1 <= A[i] <= 109
-0 <= B[i][0] <= B[i][1] < N
+### Problem Constraints
+1 <= N <= 105 </br>
+1 <= Q <= 105 </br>
+1 <= A[i] <= 109 </br>
+0 <= B[i][0] <= B[i][1] < N </br>
+
+---
 
 Input Format
 First argument A is an array of integers.
