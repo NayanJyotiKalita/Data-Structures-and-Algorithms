@@ -63,7 +63,7 @@ The subarray for the fourth query is [8, 3, 9] (index 2 to 4) which contains 1 e
 
 # CODE:
 
-
+```python
 class Solution:
     # @param A : list of integers
     # @param B : list of list of integers
@@ -131,3 +131,4 @@ print(solution.even_num_in_range(A = [2, 1, 8, 3, 9, 6],
                                          [3, 5]
                                          [1, 3] 
                                          [2, 4]   ]))      -->  O/P: [2, 1, 1, 1]
+```
