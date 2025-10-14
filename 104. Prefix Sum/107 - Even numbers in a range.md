@@ -25,17 +25,20 @@ Return an array of integers.
 ## Example Input
 
 - Input 1: </br>
-A = [1, 2, 3, 4, 5] </br>
+```
+A = [1, 2, 3, 4, 5] 
 B = [   [0, 2] 
         [2, 4]
         [1, 4]   ]
-
+```
 - Input 2: </br>
-A = [2, 1, 8, 3, 9, 6] </br>
+```
+A = [2, 1, 8, 3, 9, 6] 
 B = [   [0, 3]
         [3, 5]
         [1, 3] 
         [2, 4]   ]
+```
 
 ## Example Output
 
