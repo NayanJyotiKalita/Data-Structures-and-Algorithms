@@ -125,8 +125,9 @@ class Solution:
             c.append(count)
              
         return c
-                
-             
+```
+
+```python
 solution =  Solution()
 print(solution.even_num_in_range(A = [2, 1, 8, 3, 9, 6],
                                  B = [   [0, 3]
