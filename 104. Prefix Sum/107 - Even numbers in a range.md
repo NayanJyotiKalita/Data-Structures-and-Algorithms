@@ -91,9 +91,11 @@ class Solution:
             c.append(count)
              
         return c
+```
 
 'or'
 
+```python
 class Solution:
     # @param A : list of integers
     # @param B : list of list of integers
