@@ -44,6 +44,7 @@ Buy the stock on day 0, and sell it on day 2.
 
 # CODE:
 
+```python
 class Solution:
     # @param A : tuple of integers
     # @return an integer
@@ -58,8 +59,11 @@ class Solution:
                 maxi = A[i]
             maxprofit = max(maxprofit, maxi-A[i])
         return maxprofit
+```
+
 'or'
 
+```python
 class Solution:
     # @param A : tuple of integers
     # @return an integer
@@ -74,7 +78,9 @@ class Solution:
                 mini = A[i]
             maxprofit = max(maxprofit, A[i]-mini)
         return maxprofit
+```
 
-
+```python
 solution = Solution()
 print(solution.maxProfit(A = [1, 4, 5, 2, 4]))  -->  O/P: 4
+```
