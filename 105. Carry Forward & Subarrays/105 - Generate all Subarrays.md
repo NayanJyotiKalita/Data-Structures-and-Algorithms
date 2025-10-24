@@ -1,35 +1,44 @@
-Generate all subarrays
+# Generate all subarrays
 
-Problem Description
-You are given an array A of N integers.
+## Problem Description
+You are given an array A of N integers. </br>
 Return a 2D array consisting of all the subarrays of the array
 
-Note : The order of the subarrays in the resulting 2D array does not matter.
+***Note :*** The order of the subarrays in the resulting 2D array does not matter.
 
-Problem Constraints
-1 <= N <= 100
+### Problem Constraints
+1 <= N <= 100 </br>
 1 <= A[i] <= 105
 
-Input Format
+---
+
+### Input Format
 First argument A is an array of integers.
 
-Output Format
+### Output Format
 Return a 2D array of integers in any order.
 
-Example Input
-Input 1:
+---
+
+## Example Input
+- Input 1: </br>
 A = [1, 2, 3]
-Input 2:
+
+- Input 2: </br>
 A = [5, 2, 1, 4]
 
-Example Output
-Output 1:
+## Example Output
+- Output 1: </br>
 [[1], [1, 2], [1, 2, 3], [2], [2, 3], [3]]
-Output 2:
+
+- Output 2: </br>
 [[1 ], [1 4 ], [2 ], [2 1 ], [2 1 4 ], [4 ], [5 ], [5 2 ], [5 2 1 ], [5 2 1 4 ] ]
 
-CODE:
+---
 
+# CODE:
+
+```python
 class Solution:
     # @param A : list of integers
     # @return a list of list of integers
@@ -43,9 +52,11 @@ class Solution:
                     ls.append(A[k])
                 ans.append(ls)
         return ans
-        
+```
+   
 'or'
 
+```python
 class Solution:
     # @param A : list of integers
     # @return a list of list of integers
@@ -55,7 +66,9 @@ class Solution:
             for ei in range(si, len(A)):
                 ans.append(A[si:ei+1])
         return ans
+```
 
-
+```python
 solution = Solution()
 print(solution.all_subarrays(A = [5, 2, 1, 4]))  -->  O/P: [[1], [1, 4], [2], [2, 1], [2, 1, 4], [4], [5], [5, 2], [5, 2, 1], [5, 2, 1, 4]]
+```
