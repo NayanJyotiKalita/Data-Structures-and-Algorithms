@@ -97,5 +97,7 @@ class Solution:
         return count
 ```
 
+```python
 solution = Solution()
 print(solution.count_AG_pairs(A = "ABCGAG"))  -->  O/P: 3
+```
