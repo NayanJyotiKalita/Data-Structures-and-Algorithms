@@ -1,40 +1,49 @@
-Special Subsequences "AG" - 2
+## Special Subsequences "AG" - 2
 
-Problem Description
-You have given a string A having Uppercase English letters.
+## Problem Description
+You have given a string A having Uppercase English letters. </br>
 You have to find the number of pairs (i, j) such that A[i] = 'A', A[j] = 'G' and i < j.
 
-Problem Constraints
+### Problem Constraints
 1 <= length(A) <= 105
 
-Input Format
+---
+
+### Input Format
 First and only argument is a string A.
 
-Output Format
+### Output Format
 Return an long integer denoting the answer.
 
-Example Input
-Input 1:
+---
+
+## Example Input
+- Input 1: </br>
  A = "ABCGAG"
-Input 2:
+
+- Input 2: </br>
  A = "GAB"
 
-Example Output
-Output 1:
+## Example Output
+- Output 1: </br>
  3
-Output 2:
+- Output 2: </br>
  0
 
-Example Explanation
-Explanation 1:
- Subsequence "AG" is 3 times in given string, the pairs are (0, 3), (0, 5) and (4, 5). 
-Explanation 2:
+## Example Explanation
+- Explanation 1: </br>
+ Subsequence "AG" is 3 times in given string, the pairs are (0, 3), (0, 5) and (4, 5).
+
+- Explanation 2: </br>
  There is no subsequence "AG" in the given string.
 
- CODE:
+---
 
-1. Brute Force - O(n^2) :
+# CODE:
 
+### 1. Brute Force - O(n^2) :
+
+```python
 class Solution:
     # @param A : string
      # @return an long
@@ -45,9 +54,11 @@ class Solution:
                  if A[i] == 'A' and A[j] == 'g':
                       count += 1
         return count
+```
 
-2. Optimised - Prefix Sum - T.C. - O(n), S.C. - O(n) :
+### 2. Optimised - Prefix Sum - T.C. - O(n), S.C. - O(n) :
 
+```python
 class Solution:
     # @param A : string
      # @return an long
@@ -67,9 +78,11 @@ class Solution:
                 count += pref_a[i - 1]
 
         return count
+```
 
-3. Optimised - Carry Forward - T.C. - O(n), S.C. - O(n) :
+### 3. Optimised - Carry Forward - T.C. - O(n), S.C. - O(n) :
 
+```python
  class Solution:
     # @param A : string
      # @return an long
@@ -82,7 +95,7 @@ class Solution:
             if A[i] == 'G':
                 count += countA
         return count
-
+```
 
 solution = Solution()
 print(solution.count_AG_pairs(A = "ABCGAG"))  -->  O/P: 3
