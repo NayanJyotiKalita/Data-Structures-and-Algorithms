@@ -1,4 +1,4 @@
-Rotate Matrix
+## Rotate Matrix
 
 Problem Description
 You are given a n x n 2D matrix A representing an image.
