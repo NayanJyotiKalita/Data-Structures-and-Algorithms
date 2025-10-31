@@ -1,4 +1,4 @@
-Arithmetic Progression
+# Arithmetic Progression
 
 Problem Description
 Given an integer array A of size N. Return 1 if the array can be arranged to form an arithmetic progression, otherwise return 0.
