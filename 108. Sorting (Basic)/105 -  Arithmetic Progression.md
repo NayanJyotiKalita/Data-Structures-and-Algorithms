@@ -77,5 +77,5 @@ class Solution:
 
 ```python
 solution = Solution()
-print(solution.arithmetic_progression(A = [3, 5, 1]))
+print(solution.arithmetic_progression(A = [3, 5, 1]))  --> O/P: 1
 ```
