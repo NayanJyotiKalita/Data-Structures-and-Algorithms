@@ -20,24 +20,24 @@ Return an integer, representing the maximum possible profit.
 ---
 
 ## Example Input
-- Input 1: </br>
+- **Input 1:** </br>
 A = [1, 2] 
 
-- Input 2: </br>
+- **Input 2:** </br>
 A = [1, 4, 5, 2, 4]
 
 ## Example Output
-- Output 1: </br>
+- **Output 1:** </br>
 1
 
-- Output 2: </br>
+- **Output 2:** </br>
 4
 
 ## Example Explanation
-- Explanation 1: </br>
+- **Explanation 1:** </br>
 Buy the stock on day 0, and sell it on day 1.
 
-- Explanation 2: </br>
+- **Explanation 2:** </br>
 Buy the stock on day 0, and sell it on day 2.
 
 ---
