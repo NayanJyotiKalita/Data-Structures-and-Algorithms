@@ -20,27 +20,27 @@ Return a subarray
 ---
 
 ## Example Input
-- Input 1: </br>
+- **Input 1:** </br>
 A = [4, 3, 2, 6] </br>
 B = 1 </br>
 C = 3
 
-- Input 2: </br>
+- **Input 2:** </br>
 A = [4, 2, 2] </br>
 B = 0 </br>
 C = 1
 
 ## Example Output
-- Output 1: </br>
+- **Output 1:** </br>
 [3, 2, 6]
 
-- Output 2: </br>
+- **Output 2:** </br>
 [4, 2]
 
 ## Example Explanation
-- Explanation 1: </br>
+- **Explanation 1:** </br>
 The subarray of A from 1 to 3 is [3, 2, 6].
-- Explanation 2: </br>
+- **Explanation 2:** </br>
 The subarray of A from 0 to 1 is [4, 2].
 
 ---
