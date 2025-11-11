@@ -18,23 +18,24 @@ Return an long integer denoting the answer.
 ---
 
 ## Example Input
-- Input 1: </br>
+- **Input 1:** </br>
  A = "ABCGAG"
 
-- Input 2: </br>
+- **Input 2:** </br>
  A = "GAB"
 
 ## Example Output
-- Output 1: </br>
- 3
-- Output 2: </br>
+- **Output 1:** </br>
+
+
+- **Output 2:** </br>
  0
 
 ## Example Explanation
-- Explanation 1: </br>
+- **Explanation 1:** </br>
  Subsequence "AG" is 3 times in given string, the pairs are (0, 3), (0, 5) and (4, 5).
 
-- Explanation 2: </br>
+- **Explanation 2:** </br>
  There is no subsequence "AG" in the given string.
 
 ---
