@@ -21,17 +21,17 @@ Return a 2D array of integers in any order.
 ---
 
 ## Example Input
-- Input 1: </br>
+- **Input 1:** </br>
 A = [1, 2, 3]
 
-- Input 2: </br>
+- **Input 2:** </br>
 A = [5, 2, 1, 4]
 
 ## Example Output
-- Output 1: </br>
+- **Output 1:** </br>
 [[1], [1, 2], [1, 2, 3], [2], [2, 3], [3]]
 
-- Output 2: </br>
+- **Output 2:** </br>
 [[1 ], [1 4 ], [2 ], [2 1 ], [2 1 4 ], [4 ], [5 ], [5 2 ], [5 2 1 ], [5 2 1 4 ] ]
 
 ---
