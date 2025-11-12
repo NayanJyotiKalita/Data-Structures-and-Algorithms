@@ -24,14 +24,14 @@ Return an array of integers.
 
 ## Example Input
 
-- Input 1: </br>
+- **Input 1:** </br>
 ```
 A = [1, 2, 3, 4, 5] 
 B = [   [0, 2] 
         [2, 4]
         [1, 4]   ]
 ```
-- Input 2: </br>
+- **Input 2:** </br>
 ```
 A = [2, 1, 8, 3, 9, 6] 
 B = [   [0, 3]
@@ -42,11 +42,15 @@ B = [   [0, 3]
 
 ## Example Output
 
-- Output 1: </br>
+- **Output 1:** </br>
+```
 [1, 1, 2]
+```
 
-- Output 2: </br>
+- **Output 2:** </br>
+```
 [2, 1, 1, 1]
+```
 
 
 ## Example Explanation
