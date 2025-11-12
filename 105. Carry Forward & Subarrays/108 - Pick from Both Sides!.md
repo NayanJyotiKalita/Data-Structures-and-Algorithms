@@ -28,26 +28,26 @@ Return an integer denoting the maximum possible sum of elements you removed.
 ---
 
 ## Example Input 
-- Input 1: </br>
+- **Input 1:** </br>
  A = [5, -2, 3 , 1, 2] </br>
  B = 3
 
-- Input 2: </br>
+- **Input 2:** </br>
  A = [ 2, 3, -1, 4, 2, 1 ] </br>
  B = 4
 
 ## Example Output
-- Output 1: </br>
+- **Output 1:** </br>
  8
 
-- Output 2:
+- **Output 2**:
  9
 
 ## Example Explanation
-- Explanation 1: </br>
+- **Explanation 1:** </br>
  Remove element 5 from front and element (1, 2) from back so we get 5 + 1 + 2 = 8
 
-- Explanation 2: </br>
+- **Explanation 2:** </br>
  Remove the first element and the last 3 elements. So we get 2 + 4 + 2 + 1 = 9
 
 ---
