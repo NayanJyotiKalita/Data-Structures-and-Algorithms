@@ -55,12 +55,12 @@ B = [   [0, 3]
 
 ## Example Explanation
 
-- For Input 1: </br> 
+- **For Input 1:** </br> 
 The subarray for the first query is [1, 2, 3] (index 0 to 2) which contains 1 even number. </br> 
 The subarray for the second query is [3, 4, 5] (index 2 to 4) which contains 1 even number. </br> 
 The subarray for the third query is [2, 3, 4, 5] (index 1 to 4) which contains 2 even numbers. </br>
 
-- For Input 2: </br>
+- **For Input 2:** </br>
 The subarray for the first query is [2, 1, 8, 3] (index 0 to 3) which contains 2 even numbers. </br>
 The subarray for the second query is [3, 9, 6] (index 3 to 5) which contains 1 even number. </br>
 The subarray for the third query is [1, 8, 3] (index 1 to 3) which contains 1 even number. </br> 
