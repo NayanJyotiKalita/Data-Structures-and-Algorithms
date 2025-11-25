@@ -68,7 +68,7 @@ The subarray for the fourth query is [8, 3, 9] (index 2 to 4) which contains 1 e
 
 ---
 
-# CODE:
+# CODE
 
 ```python
 class Solution:
