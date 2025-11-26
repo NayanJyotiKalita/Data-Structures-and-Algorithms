@@ -1,4 +1,4 @@
-Decimal to Binary
+# Decimal to Binary
 
 Problem Description
 You are given an integer A in decimal (base 10).
