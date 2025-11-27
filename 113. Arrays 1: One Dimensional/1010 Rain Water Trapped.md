@@ -1,4 +1,4 @@
-Rain Water Trapped
+# Rain Water Trapped
 
 Problem Description
 Imagine a histogram where the bars' heights are given by the array A. Each bar is of uniform width, which is 1 unit. When it rains, water will accumulate in the valleys between the bars.
