@@ -1,4 +1,6 @@
-What will be the output of following program ?
+# Simple Recursion
+
+## Q. What will be the output of following program ?
 
 def bar(x, y):
     if y == 0:
