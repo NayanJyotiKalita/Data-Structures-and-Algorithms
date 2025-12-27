@@ -1,4 +1,4 @@
-Frequency of element query
+# Frequency of element query
 
 Problem Description
 SCALER organizes a series of contests aimed at helping learners enhance their coding skills. Each learner can participate in multiple contests, and their participation is represented by integers in an array. 
