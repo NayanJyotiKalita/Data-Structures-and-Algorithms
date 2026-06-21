@@ -1,6 +1,5 @@
 # Insert in Linked List
 
-
 ## Problem Description
 
 You are given A which is the head of a linked list. Also given is the value B and position C. Complete the function that should insert a new node with the said value at the given position. </br>
@@ -11,6 +10,8 @@ In case the position is more than length of linked list, simply insert the new n
 In case the pos is 0, simply insert the new node at head only.
 Follow 0-based indexing for the node numbering.
 ```
+
+---
 
 ### Problem Constraints
 ```
@@ -25,9 +26,7 @@ Follow 0-based indexing for the node numbering.
 ### Input Format
 ```
 The first argument A is the head of a linked list.
-
 The second argument B is an integer which denotes the value of the new node
-
 The third argument C is an integer which denotes the position of the new node
 ```
 
