@@ -48,7 +48,7 @@ Output 3:
  1 
 ```
 
-Example Explanation
+## Example Explanation
 ```
 We can clearly see that the first and third case contain valid paranthesis.
 In the second case, there is no closing bracket for {, thus the paranthesis sequence is invalid.
