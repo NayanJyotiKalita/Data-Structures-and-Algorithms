@@ -23,17 +23,17 @@ It is guaranteed that, atleast one call is made to either getMin() or top().
 
 ---
 
-Input Format
+### Input Format
 Functions will be called by the checker code automatically.
 
 
-Output Format
+### Output Format
 Each function should return the values as defined by the problem statement.
 
 ---
 
-Example Input
-
+## Example Input
+```
 Input 1:
 
 push(1)
@@ -49,19 +49,19 @@ Input 2:
 getMin()
 pop()
 top()
+```
 
-
-Example Output
-
+## Example Output
+```
 Output 1:
  -2 1 2
  
 Output 2:
  -1 -1
+```
 
-
-Example Explanation
-
+## Example Explanation
+```
 Explanation 1:
 Let the initial stack be : []
 1) push(1) : [1]
@@ -77,9 +77,40 @@ Let the initial stack be : []
 1) getMin() : Returns -1 as the stack is empty.
 2) pop() :  Returns nothing as the stack is empty.
 3) top() : Returns -1 as the stack is empty.
+```
 
 ---
 
 # CODE
 
 ```python
+from collections import deque
+class MinStack:
+    def __init__(self):
+        self.stack = deque()
+        self.minstack = deque()
+    
+    # @param x, an integer
+    # @return nothing
+    def push(self, x):
+
+        if not self.minstack or x < self.minstack[-1]:
+            self.minstack.append(x)
+        self.stack.append(x)
+         
+    # @return nothing
+    def pop(self):
+        if self.stack:
+            if self.minstack:
+                if self.minstack[-1] == self.stack[-1]:
+                    self.minstack.pop()
+            self.stack.pop() 
+
+    # @return an integer
+    def top(self):
+        return self.stack[-1] if self.stack else -1
+
+    # @return an integer
+    def getMin(self):
+        return self.minstack[-1] if self.minstack else -1
+```
