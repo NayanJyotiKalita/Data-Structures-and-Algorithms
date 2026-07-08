@@ -1,6 +1,6 @@
 # Redundant Braces
 
-Problem Description
+## Problem Description
 
 Given a string **A** denoting an expression. It contains the following operators '+', '-', '*', '/'.
 
@@ -11,25 +11,25 @@ NOTE: A will be always a valid expression and will not contain any white spaces.
 
 
 
-Problem Constraints
+### Problem Constraints
 
 1 <= |A| <= 105
 
 
 
-Input Format
+### Input Format
 
 The only argument given is string A.
 
 
 
-Output Format
+### Output Format
 
 Return 1 if A has redundant braces else, return 0.
 
 
 
-Example Input
+## Example Input
 
 Input 1:
 
@@ -44,7 +44,7 @@ Input 2:
 
 
 
-Example Output
+## Example Output
 
 Output 1:
 
@@ -56,7 +56,7 @@ Output 2:
 
 
 
-Example Explanation
+## Example Explanation
 
 Explanation 1:
 
@@ -70,7 +70,7 @@ Explanation 2:
 
 # CODE
 
-
+```python
 from collections import deque
 class Solution:
     # @param A : string
@@ -98,3 +98,4 @@ class Solution:
                 stack.append(A[i])
 
         return int(status)
+```
