@@ -5,7 +5,8 @@
 ```
 Given string A denoting an infix expression. Convert the infix expression into a postfix expression.
 
-String A consists of ^, /, *, +, -, (, ) and lowercase English alphabets where lowercase English alphabets are operands and ^, /, *, +, - are operators.
+String A consists of ^, /, *, +, -, (, ) and lowercase English alphabets where lowercase English alphabets are operands
+and ^, /, *, +, - are operators.
 
 Find and return the postfix expression of A.
 ```
